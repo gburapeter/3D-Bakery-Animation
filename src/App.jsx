@@ -1,8 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import "./App.css";
-import { Bakemgo } from "./Bakem";
-import { Gogo } from "./Gogo.1";
+import { Gogo } from "./Gogo";
 
 function App() {
 	// useEffect(() => {
@@ -21,9 +20,7 @@ function App() {
 				}}
 			>
 				<OrbitControls />
-				{/* <color args={["white"]} attach="background" /> */}
 				<Gogo />
-				{/* <Bakedem /> */}
 			</Canvas>
 		</>
 	);

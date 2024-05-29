@@ -4,10 +4,10 @@ Command: npx gltfjsx@6.2.16 public/gogo.glb -k -K -j -m -T
 Files: public/gogo.glb [1.33KB] > /Users/peterskills/Desktop/react-three-fiber/my-app/gogo-transformed.glb [1KB] (25%)
 */
 
-import React, { useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
-import { NearestFilter, RepeatWrapping, TextureLoader } from "three";
+import React from "react";
+import { NearestFilter, TextureLoader } from "three";
 
 export function Gogo(props) {
 	const { nodes, materials } = useGLTF("/LETSGO.glb");
