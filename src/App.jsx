@@ -1,7 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import "./App.css";
-import { Gogo } from "./Gogo";
+import { Bakery } from "./Bakery";
 
 function App() {
 	// useEffect(() => {
@@ -20,7 +20,7 @@ function App() {
 				}}
 			>
 				<OrbitControls />
-				<Gogo />
+				<Bakery />
 			</Canvas>
 		</>
 	);

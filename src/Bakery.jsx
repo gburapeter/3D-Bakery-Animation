@@ -7,7 +7,7 @@ Files: public/gogo.glb [1.33KB] > /Users/peterskills/Desktop/react-three-fiber/m
 import { useGLTF, useTexture } from "@react-three/drei";
 import React from "react";
 
-export function Gogo(props) {
+export function Bakery(props) {
 	const { nodes, materials } = useGLTF("/tiles.glb");
 
 	const bakedTexture = useTexture("/guccigang.jpg");
@@ -17,6 +17,7 @@ export function Gogo(props) {
 	const tilesTexture = useTexture("/tiles.jpg");
 
 	tilesTexture.flipY = false;
+
 	return (
 		<group {...props} dispose={null}>
 			<mesh
