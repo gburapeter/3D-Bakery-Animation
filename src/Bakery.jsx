@@ -1734,4 +1734,4 @@ export function Bakery(props) {
 	);
 }
 
-useGLTF.preload("/guccigang.glb");
+useGLTF.preload("/tiles.glb");
