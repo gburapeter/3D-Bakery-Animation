@@ -5,9 +5,7 @@ Files: public/gogo.glb [1.33KB] > /Users/peterskills/Desktop/react-three-fiber/m
 */
 
 import { useGLTF, useTexture } from "@react-three/drei";
-import { useLoader } from "@react-three/fiber";
 import React from "react";
-import { NearestFilter, TextureLoader } from "three";
 
 export function Gogo(props) {
 	const { nodes, materials } = useGLTF("/tiles.glb");
