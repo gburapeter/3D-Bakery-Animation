@@ -10,15 +10,11 @@ import React from "react";
 import { NearestFilter, TextureLoader } from "three";
 
 export function Gogo(props) {
-	const { nodes, materials } = useGLTF("/LETSGO.glb");
+	const { nodes, materials } = useGLTF("/guccigang.glb");
 
-	const brick = useLoader(TextureLoader, "/asd.jpg");
-	brick.minFilter = NearestFilter;
-	brick.flipY = false;
-	const bakedTexture = useTexture("/letsgogang.jpg");
+	const bakedTexture = useTexture("/guccigang.jpg");
 
 	bakedTexture.flipY = false;
-
 	return (
 		<group {...props} dispose={null}>
 			<mesh
@@ -28,7 +24,7 @@ export function Gogo(props) {
 				material={nodes.Node.material}
 				position={[0.169, 1.233, -1.532]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -37,7 +33,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles.material}
 				position={[0.383, 1.161, 1.091]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -46,7 +42,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles001.material}
 				position={[0.216, 1.161, 1.23]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -55,7 +51,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles002.material}
 				position={[0.536, 1.161, 1.281]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -64,7 +60,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles003.material}
 				position={[0.363, 1.161, 1.4]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -73,7 +69,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles004.material}
 				position={[-0.458, 1.161, 1.131]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -82,7 +78,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles005.material}
 				position={[-0.244, 1.161, 1.131]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -91,7 +87,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles006.material}
 				position={[-0.244, 1.161, 1.413]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -100,7 +96,7 @@ export function Gogo(props) {
 				material={nodes.donutSprinkles007.material}
 				position={[-0.458, 1.161, 1.393]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -109,7 +105,7 @@ export function Gogo(props) {
 				material={nodes.Honey.material}
 				position={[-1.765, 2.675, -0.523]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -118,7 +114,7 @@ export function Gogo(props) {
 				material={nodes.WallFrame.material}
 				position={[-1.885, 2.387, 1.015]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -127,7 +123,7 @@ export function Gogo(props) {
 				material={nodes.Honey001.material}
 				position={[-1.288, 2.668, -1.798]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -136,7 +132,7 @@ export function Gogo(props) {
 				material={nodes.Honey002.material}
 				position={[-0.863, 2.668, -1.798]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -145,7 +141,7 @@ export function Gogo(props) {
 				material={nodes.Honey003.material}
 				position={[-0.863, 2.316, -1.798]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -154,7 +150,7 @@ export function Gogo(props) {
 				material={nodes.Honey004.material}
 				position={[-1.307, 2.316, -1.798]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -163,7 +159,7 @@ export function Gogo(props) {
 				material={nodes.Honey005.material}
 				position={[-1.765, 2.675, -1.018]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -172,7 +168,7 @@ export function Gogo(props) {
 				material={nodes.Honey006.material}
 				position={[-1.765, 2.324, -1.018]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -181,7 +177,7 @@ export function Gogo(props) {
 				material={nodes.Honey007.material}
 				position={[-1.765, 2.324, -0.571]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -190,7 +186,7 @@ export function Gogo(props) {
 				material={nodes.BreadShelf.material}
 				position={[-1.672, 1.351, 0.368]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -199,7 +195,7 @@ export function Gogo(props) {
 				material={nodes.loafBaguette002.material}
 				position={[-1.614, 1.509, 0.172]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -208,7 +204,7 @@ export function Gogo(props) {
 				material={nodes.Loaf2001.material}
 				position={[-1.645, 1.904, 0.478]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -217,7 +213,7 @@ export function Gogo(props) {
 				material={nodes.Loaf2002.material}
 				position={[-1.645, 1.904, 0.227]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -226,7 +222,7 @@ export function Gogo(props) {
 				material={nodes.Loaf2003.material}
 				position={[-1.585, 1.166, 0.544]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -235,7 +231,7 @@ export function Gogo(props) {
 				material={nodes.Loaf2004.material}
 				position={[-1.585, 1.166, 0.333]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -244,7 +240,7 @@ export function Gogo(props) {
 				material={nodes.Loaf2005.material}
 				position={[-1.585, 1.166, 0.142]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -253,7 +249,7 @@ export function Gogo(props) {
 				material={nodes.loafBaguette001.material}
 				position={[-1.614, 1.509, 0.351]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -262,7 +258,7 @@ export function Gogo(props) {
 				material={nodes.loafBaguette003.material}
 				position={[-1.614, 1.509, 0.572]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -271,7 +267,7 @@ export function Gogo(props) {
 				material={nodes.Cake1.material}
 				position={[1.122, 1.233, 1.27]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -280,7 +276,7 @@ export function Gogo(props) {
 				material={nodes.Cake1001.material}
 				position={[1.122, 1.233, 0.609]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -289,7 +285,7 @@ export function Gogo(props) {
 				material={nodes.Cabinet_FrontA006_Material_0002.material}
 				position={[-0.19, 1.14, -1.552]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -298,7 +294,7 @@ export function Gogo(props) {
 				material={nodes.Oven.material}
 				position={[0.737, 1.125, -1.32]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -307,7 +303,7 @@ export function Gogo(props) {
 				material={nodes.Plate.material}
 				position={[-1.468, 1.252, -0.615]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -316,7 +312,7 @@ export function Gogo(props) {
 				material={nodes.Rolling_Pin_Q.material}
 				position={[-1.248, 1.272, -1.529]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -325,7 +321,7 @@ export function Gogo(props) {
 				material={nodes.CookingEdeny.material}
 				position={[-1.607, 1.372, -1.397]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -334,7 +330,7 @@ export function Gogo(props) {
 				material={nodes.Plate001.material}
 				position={[0.379, 1.138, 1.269]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -343,7 +339,7 @@ export function Gogo(props) {
 				material={nodes.Plate002.material}
 				position={[-0.351, 1.135, 1.269]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -352,7 +348,7 @@ export function Gogo(props) {
 				material={nodes.chair.material}
 				position={[3.507, 0.306, 1.844]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -361,7 +357,7 @@ export function Gogo(props) {
 				material={nodes.chair001.material}
 				position={[3.507, 0.306, -0.163]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -369,7 +365,7 @@ export function Gogo(props) {
 				geometry={nodes.Terrain.geometry}
 				material={nodes.Terrain.material}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -378,7 +374,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile1.material}
 				position={[1.308, 0.037, 1.95]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -387,7 +383,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile2.material}
 				position={[1.823, 0.037, 1.95]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -396,7 +392,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile3.material}
 				position={[1.308, 0.037, 2.457]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -405,7 +401,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile4.material}
 				position={[1.854, 0.037, 2.457]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -414,7 +410,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile5.material}
 				position={[1.284, 0.037, 2.974]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -423,7 +419,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile6.material}
 				position={[1.854, 0.037, 2.974]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -432,7 +428,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile7.material}
 				position={[1.271, 0.037, 3.487]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -441,7 +437,7 @@ export function Gogo(props) {
 				material={nodes.EntranceTile8.material}
 				position={[1.832, 0.037, 3.487]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -450,7 +446,7 @@ export function Gogo(props) {
 				material={nodes.HouseWall1.material}
 				position={[-0.347, 1.653, -2.045]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -459,7 +455,7 @@ export function Gogo(props) {
 				material={nodes.HouseWall2.material}
 				position={[-2, 1.653, -0.135]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -468,7 +464,7 @@ export function Gogo(props) {
 				material={nodes.Wall_teteje2.material}
 				position={[-2.006, 3.164, -0.087]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -477,7 +473,7 @@ export function Gogo(props) {
 				material={nodes.WallAlso.material}
 				position={[-0.264, 0.106, -0.137]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -486,7 +482,7 @@ export function Gogo(props) {
 				material={nodes.WallJobbAlsoAlso.material}
 				position={[-0.264, 0.106, -2.044]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -495,7 +491,7 @@ export function Gogo(props) {
 				material={nodes.WallJobbAlsoAlso001.material}
 				position={[-2.001, 0.106, -0.22]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -504,7 +500,7 @@ export function Gogo(props) {
 				material={nodes.WallTeteje1.material}
 				position={[-0.309, 3.164, -2.045]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -513,7 +509,7 @@ export function Gogo(props) {
 				material={nodes.HouseFloor.material}
 				position={[-0.263, 0.27, -0.137]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -522,7 +518,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles01.material}
 				position={[1.303, 1.4, -1.955]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -531,7 +527,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles02.material}
 				position={[1.303, 1.205, -1.955]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -540,7 +536,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles03.material}
 				position={[1.303, 1.01, -1.955]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -549,7 +545,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles04.material}
 				position={[1.303, 0.815, -1.955]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -558,7 +554,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles05.material}
 				position={[1.303, 0.621, -1.955]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -567,7 +563,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles06.material}
 				position={[1.303, 0.426, -1.955]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -576,7 +572,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles0007.material}
 				position={[-1.904, 1.4, 1.637]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -585,7 +581,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles0008.material}
 				position={[-1.904, 1.205, 1.637]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -594,7 +590,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles0009.material}
 				position={[-1.904, 1.01, 1.637]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -603,7 +599,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles0010.material}
 				position={[-1.904, 0.815, 1.637]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -612,7 +608,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles0011.material}
 				position={[-1.904, 0.621, 1.637]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -621,7 +617,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles0012.material}
 				position={[-1.904, 0.426, 1.637]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -630,7 +626,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1.material}
 				position={[-1.909, 1.4, 1.379]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -639,7 +635,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1001.material}
 				position={[-1.909, 1.4, 0.987]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -648,7 +644,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1002.material}
 				position={[-1.909, 1.4, 0.595]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -657,7 +653,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1003.material}
 				position={[-1.909, 1.4, 0.204]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -666,7 +662,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1004.material}
 				position={[-1.909, 1.4, -0.188]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -675,7 +671,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1005.material}
 				position={[-1.909, 1.4, -0.58]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -684,7 +680,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1006.material}
 				position={[-1.909, 1.4, -0.972]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -693,7 +689,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1007.material}
 				position={[-1.909, 1.4, -1.364]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -702,7 +698,8 @@ export function Gogo(props) {
 				material={nodes.WallTiles1008.material}
 				position={[-1.909, 1.4, -1.756]}
 			>
-				<meshBasicMaterial map={brick} />;
+				{" "}
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -711,7 +708,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1009.material}
 				position={[-1.909, 1.205, 1.379]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -720,7 +717,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1010.material}
 				position={[-1.909, 1.205, 0.987]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -729,7 +726,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1011.material}
 				position={[-1.909, 1.205, 0.595]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -738,7 +735,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1012.material}
 				position={[-1.909, 1.205, 0.204]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -747,7 +744,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1013.material}
 				position={[-1.909, 1.205, -0.188]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -756,7 +753,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1014.material}
 				position={[-1.909, 1.205, -0.58]}
 			>
-				<meshBasicMaterial map={brick} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -765,7 +762,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1015.material}
 				position={[-1.909, 1.205, -0.972]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -774,7 +771,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1016.material}
 				position={[-1.909, 1.205, -1.364]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -783,7 +780,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1017.material}
 				position={[-1.909, 1.205, -1.756]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -792,7 +789,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1018.material}
 				position={[-1.909, 1.01, 1.379]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -801,7 +798,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1019.material}
 				position={[-1.909, 1.01, 0.987]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -810,7 +807,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1020.material}
 				position={[-1.909, 1.01, 0.595]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -819,7 +816,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1021.material}
 				position={[-1.909, 1.01, 0.204]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -828,7 +825,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1022.material}
 				position={[-1.909, 1.01, -0.188]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -837,7 +834,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1023.material}
 				position={[-1.909, 1.01, -0.58]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -846,7 +843,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1024.material}
 				position={[-1.909, 1.01, -0.972]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -855,7 +852,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1025.material}
 				position={[-1.909, 1.01, -1.364]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -864,7 +861,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1026.material}
 				position={[-1.909, 1.01, -1.756]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -873,7 +870,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1027.material}
 				position={[-1.909, 0.815, 1.379]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -882,7 +879,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1028.material}
 				position={[-1.909, 0.815, 0.987]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -891,7 +888,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1029.material}
 				position={[-1.909, 0.815, 0.595]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -900,7 +897,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1030.material}
 				position={[-1.909, 0.815, 0.204]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -909,7 +906,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1031.material}
 				position={[-1.909, 0.815, -0.188]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -918,7 +915,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1032.material}
 				position={[-1.909, 0.815, -0.58]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -927,7 +924,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1033.material}
 				position={[-1.909, 0.815, -0.972]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -936,7 +933,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1034.material}
 				position={[-1.909, 0.815, -1.364]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -945,7 +942,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1035.material}
 				position={[-1.909, 0.815, -1.756]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -954,7 +951,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1036.material}
 				position={[-1.909, 0.621, 1.379]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -963,7 +960,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1037.material}
 				position={[-1.909, 0.621, 0.987]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -972,7 +969,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1038.material}
 				position={[-1.909, 0.621, 0.595]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -981,7 +978,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1039.material}
 				position={[-1.909, 0.621, 0.204]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -990,7 +987,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1040.material}
 				position={[-1.909, 0.621, -0.188]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -999,7 +996,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1041.material}
 				position={[-1.909, 0.621, -0.58]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1008,7 +1005,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1042.material}
 				position={[-1.909, 0.621, -0.972]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1017,7 +1014,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1043.material}
 				position={[-1.909, 0.621, -1.364]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1026,7 +1023,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1044.material}
 				position={[-1.909, 0.621, -1.756]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1035,7 +1032,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1045.material}
 				position={[-1.909, 0.426, 1.379]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1044,7 +1041,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1046.material}
 				position={[-1.909, 0.426, 0.987]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1053,7 +1050,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1047.material}
 				position={[-1.909, 0.426, 0.595]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1062,7 +1059,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1048.material}
 				position={[-1.909, 0.426, 0.204]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1071,7 +1068,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1049.material}
 				position={[-1.909, 0.426, -0.188]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1080,7 +1077,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1050.material}
 				position={[-1.909, 0.426, -0.58]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1089,7 +1086,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1051.material}
 				position={[-1.909, 0.426, -0.972]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1098,7 +1095,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1052.material}
 				position={[-1.909, 0.426, -1.364]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1107,7 +1104,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles1053.material}
 				position={[-1.909, 0.426, -1.756]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1116,7 +1113,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2.material}
 				position={[-1.759, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1125,7 +1122,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2001.material}
 				position={[-1.446, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1134,7 +1131,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2002.material}
 				position={[-1.132, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1143,7 +1140,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2003.material}
 				position={[-0.819, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1152,7 +1149,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2004.material}
 				position={[-0.505, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1161,7 +1158,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2005.material}
 				position={[-0.192, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1170,7 +1167,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2006.material}
 				position={[0.122, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1179,7 +1176,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2007.material}
 				position={[0.436, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1188,7 +1185,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2008.material}
 				position={[0.749, 1.4, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1197,7 +1194,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2009.material}
 				position={[-1.759, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1206,7 +1203,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2010.material}
 				position={[-1.446, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1215,7 +1212,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2011.material}
 				position={[-1.132, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1224,7 +1221,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2012.material}
 				position={[-0.819, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1233,7 +1230,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2013.material}
 				position={[-0.505, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1242,7 +1239,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2014.material}
 				position={[-0.192, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1251,7 +1248,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2015.material}
 				position={[0.122, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1260,7 +1257,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2016.material}
 				position={[0.436, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1269,7 +1266,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2017.material}
 				position={[0.749, 1.205, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1278,7 +1275,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2018.material}
 				position={[-1.759, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1287,7 +1284,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2019.material}
 				position={[-1.446, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1296,7 +1293,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2020.material}
 				position={[-1.132, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1305,7 +1302,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2021.material}
 				position={[-0.819, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1314,7 +1311,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2022.material}
 				position={[-0.505, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1323,7 +1320,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2023.material}
 				position={[-0.192, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1332,7 +1329,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2024.material}
 				position={[0.122, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1341,7 +1338,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2025.material}
 				position={[0.436, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1350,7 +1347,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2026.material}
 				position={[0.749, 1.01, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1359,7 +1356,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2027.material}
 				position={[-1.759, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1368,7 +1365,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2028.material}
 				position={[-1.446, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1377,7 +1374,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2029.material}
 				position={[-1.132, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1386,7 +1383,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2030.material}
 				position={[-0.819, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1395,7 +1392,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2031.material}
 				position={[-0.505, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1404,7 +1401,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2032.material}
 				position={[-0.192, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1413,7 +1410,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2033.material}
 				position={[0.122, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1422,7 +1419,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2034.material}
 				position={[0.436, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1431,7 +1428,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2035.material}
 				position={[0.749, 0.815, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1440,7 +1437,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2036.material}
 				position={[-1.759, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1449,7 +1446,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2037.material}
 				position={[-1.446, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1458,7 +1455,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2038.material}
 				position={[-1.132, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1467,7 +1464,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2039.material}
 				position={[-0.819, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1476,7 +1473,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2040.material}
 				position={[-0.505, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1485,7 +1482,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2041.material}
 				position={[-0.192, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1494,7 +1491,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2042.material}
 				position={[0.122, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1503,7 +1500,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2043.material}
 				position={[0.436, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1512,7 +1509,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2044.material}
 				position={[0.749, 0.621, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1521,7 +1518,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2045.material}
 				position={[-1.759, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1530,7 +1527,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2046.material}
 				position={[-1.446, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1539,7 +1536,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2047.material}
 				position={[-1.132, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1548,7 +1545,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2048.material}
 				position={[-0.819, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1557,7 +1554,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2049.material}
 				position={[-0.505, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1566,7 +1563,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2050.material}
 				position={[-0.192, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1575,7 +1572,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2051.material}
 				position={[0.122, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1584,7 +1581,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2052.material}
 				position={[0.436, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1593,7 +1590,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2053.material}
 				position={[0.749, 0.426, -1.961]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1602,7 +1599,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2054.material}
 				position={[1.062, 1.4, -1.955]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1611,7 +1608,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2055.material}
 				position={[1.062, 1.205, -1.955]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1620,7 +1617,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2056.material}
 				position={[1.062, 1.01, -1.955]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1629,7 +1626,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2057.material}
 				position={[1.062, 0.815, -1.955]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1638,7 +1635,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2058.material}
 				position={[1.062, 0.621, -1.955]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1647,7 +1644,7 @@ export function Gogo(props) {
 				material={nodes.WallTiles2059.material}
 				position={[1.062, 0.426, -1.955]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1656,7 +1653,7 @@ export function Gogo(props) {
 				material={nodes.ModernKitchenTable1.material}
 				position={[-0.092, 0.894, 1.246]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1665,7 +1662,7 @@ export function Gogo(props) {
 				material={nodes.ModernKitchenTable1001.material}
 				position={[1.042, 0.889, 0.905]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1674,7 +1671,7 @@ export function Gogo(props) {
 				material={nodes.Cabinet_new.material}
 				position={[-1.12, 2.28, -1.821]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1683,7 +1680,7 @@ export function Gogo(props) {
 				material={nodes.Cabinet_Shelf_B007_Material_0.material}
 				position={[-1.773, 2.28, -0.815]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1692,7 +1689,7 @@ export function Gogo(props) {
 				material={nodes.CabinetTable_B002_Material_0001.material}
 				position={[-1.389, 0.865, -1.008]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1701,7 +1698,7 @@ export function Gogo(props) {
 				material={nodes["38_Kitche1001"].material}
 				position={[-0.809, 1.429, -1.653]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1710,7 +1707,7 @@ export function Gogo(props) {
 				material={nodes.FlowerPot4.material}
 				position={[-1.4, 1.086, 1.47]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1719,7 +1716,7 @@ export function Gogo(props) {
 				material={nodes.Window.material}
 				position={[0.211, 2.105, -1.901]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1728,10 +1725,10 @@ export function Gogo(props) {
 				material={nodes.Table.material}
 				position={[3.586, 0.097, 0.799]}
 			>
-				<meshBasicMaterial map={bakedTexture} />;
+				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 		</group>
 	);
 }
 
-useGLTF.preload("/LETSGO.glb");
+useGLTF.preload("/guccigang.glb");
