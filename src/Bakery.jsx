@@ -8,15 +8,19 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import React from "react";
 
 export function Bakery(props) {
-	const { nodes, materials } = useGLTF("/tiles.glb");
+	const { nodes, materials } = useGLTF("/baking.glb");
 
 	const bakedTexture = useTexture("/guccigang.jpg");
 
 	bakedTexture.flipY = false;
 
-	const tilesTexture = useTexture("/tiles.jpg");
+	const tilesTexture = useTexture("/tiles-min.jpg");
 
 	tilesTexture.flipY = false;
+
+	const cakeTexture = useTexture("/baking.jpg");
+
+	cakeTexture.flipY = false;
 
 	return (
 		<group {...props} dispose={null}>
@@ -27,7 +31,7 @@ export function Bakery(props) {
 				material={nodes.Node.material}
 				position={[0.169, 1.233, -1.532]}
 			>
-				<meshBasicMaterial map={bakedTexture} />
+				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -270,7 +274,7 @@ export function Bakery(props) {
 				material={nodes.Cake1.material}
 				position={[1.122, 1.233, 1.27]}
 			>
-				<meshBasicMaterial map={bakedTexture} />
+				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -288,7 +292,7 @@ export function Bakery(props) {
 				material={nodes.Cabinet_FrontA006_Material_0002.material}
 				position={[-0.19, 1.14, -1.552]}
 			>
-				<meshBasicMaterial map={bakedTexture} />
+				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1701,7 +1705,7 @@ export function Bakery(props) {
 				material={nodes["38_Kitche1001"].material}
 				position={[-0.809, 1.429, -1.653]}
 			>
-				<meshBasicMaterial map={bakedTexture} />
+				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
 				castShadow
@@ -1734,4 +1738,4 @@ export function Bakery(props) {
 	);
 }
 
-useGLTF.preload("/tiles.glb");
+useGLTF.preload("/baking.glb");
