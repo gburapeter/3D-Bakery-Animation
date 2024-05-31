@@ -8,7 +8,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import React from "react";
 
 export function Bakery(props) {
-	const { nodes, materials } = useGLTF("/baking.glb");
+	const { nodes } = useGLTF("/baking.glb");
 
 	const bakedTexture = useTexture("/guccigang.jpg");
 
@@ -24,1714 +24,1127 @@ export function Bakery(props) {
 
 	return (
 		<group {...props} dispose={null}>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.Node.geometry}
-				material={nodes.Node.material}
-				position={[0.169, 1.233, -1.532]}
-			>
+			<mesh geometry={nodes.Node.geometry} position={[0.169, 1.233, -1.532]}>
 				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles.geometry}
-				material={nodes.donutSprinkles.material}
 				position={[0.383, 1.161, 1.091]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles001.geometry}
-				material={nodes.donutSprinkles001.material}
 				position={[0.216, 1.161, 1.23]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles002.geometry}
-				material={nodes.donutSprinkles002.material}
 				position={[0.536, 1.161, 1.281]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles003.geometry}
-				material={nodes.donutSprinkles003.material}
 				position={[0.363, 1.161, 1.4]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles004.geometry}
-				material={nodes.donutSprinkles004.material}
 				position={[-0.458, 1.161, 1.131]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles005.geometry}
-				material={nodes.donutSprinkles005.material}
 				position={[-0.244, 1.161, 1.131]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles006.geometry}
-				material={nodes.donutSprinkles006.material}
 				position={[-0.244, 1.161, 1.413]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.donutSprinkles007.geometry}
-				material={nodes.donutSprinkles007.material}
 				position={[-0.458, 1.161, 1.393]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey.geometry}
-				material={nodes.Honey.material}
 				position={[-1.765, 2.675, -0.523]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallFrame.geometry}
-				material={nodes.WallFrame.material}
 				position={[-1.885, 2.387, 1.015]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey001.geometry}
-				material={nodes.Honey001.material}
 				position={[-1.288, 2.668, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey002.geometry}
-				material={nodes.Honey002.material}
 				position={[-0.863, 2.668, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey003.geometry}
-				material={nodes.Honey003.material}
 				position={[-0.863, 2.316, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey004.geometry}
-				material={nodes.Honey004.material}
 				position={[-1.307, 2.316, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey005.geometry}
-				material={nodes.Honey005.material}
 				position={[-1.765, 2.675, -1.018]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey006.geometry}
-				material={nodes.Honey006.material}
 				position={[-1.765, 2.324, -1.018]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Honey007.geometry}
-				material={nodes.Honey007.material}
 				position={[-1.765, 2.324, -0.571]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.BreadShelf.geometry}
-				material={nodes.BreadShelf.material}
 				position={[-1.672, 1.351, 0.368]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.loafBaguette002.geometry}
-				material={nodes.loafBaguette002.material}
 				position={[-1.614, 1.509, 0.172]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Loaf2001.geometry}
-				material={nodes.Loaf2001.material}
 				position={[-1.645, 1.904, 0.478]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Loaf2002.geometry}
-				material={nodes.Loaf2002.material}
 				position={[-1.645, 1.904, 0.227]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Loaf2003.geometry}
-				material={nodes.Loaf2003.material}
 				position={[-1.585, 1.166, 0.544]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Loaf2004.geometry}
-				material={nodes.Loaf2004.material}
 				position={[-1.585, 1.166, 0.333]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Loaf2005.geometry}
-				material={nodes.Loaf2005.material}
 				position={[-1.585, 1.166, 0.142]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.loafBaguette001.geometry}
-				material={nodes.loafBaguette001.material}
 				position={[-1.614, 1.509, 0.351]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.loafBaguette003.geometry}
-				material={nodes.loafBaguette003.material}
 				position={[-1.614, 1.509, 0.572]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.Cake1.geometry}
-				material={nodes.Cake1.material}
-				position={[1.122, 1.233, 1.27]}
-			>
+			<mesh geometry={nodes.Cake1.geometry} position={[1.122, 1.233, 1.27]}>
 				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Cake1001.geometry}
-				material={nodes.Cake1001.material}
 				position={[1.122, 1.233, 0.609]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Cabinet_FrontA006_Material_0002.geometry}
-				material={nodes.Cabinet_FrontA006_Material_0002.material}
 				position={[-0.19, 1.14, -1.552]}
 			>
 				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.Oven.geometry}
-				material={nodes.Oven.material}
-				position={[0.737, 1.125, -1.32]}
-			>
+			<mesh geometry={nodes.Oven.geometry} position={[0.737, 1.125, -1.32]}>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Plate.geometry}
-				material={nodes.Plate.material}
 				position={[-1.468, 1.252, -0.615]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Rolling_Pin_Q.geometry}
-				material={nodes.Rolling_Pin_Q.material}
 				position={[-1.248, 1.272, -1.529]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.CookingEdeny.geometry}
-				material={nodes.CookingEdeny.material}
 				position={[-1.607, 1.372, -1.397]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Plate001.geometry}
-				material={nodes.Plate001.material}
 				position={[0.379, 1.138, 1.269]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Plate002.geometry}
-				material={nodes.Plate002.material}
 				position={[-0.351, 1.135, 1.269]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.chair.geometry}
-				material={nodes.chair.material}
-				position={[3.507, 0.306, 1.844]}
-			>
+			<mesh geometry={nodes.chair.geometry} position={[3.507, 0.306, 1.844]}>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.chair001.geometry}
-				material={nodes.chair001.material}
 				position={[3.507, 0.306, -0.163]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.Terrain.geometry}
-				material={nodes.Terrain.material}
-			>
+			<mesh castShadow receiveShadow geometry={nodes.Terrain.geometry}>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile1.geometry}
-				material={nodes.EntranceTile1.material}
 				position={[1.308, 0.037, 1.95]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile2.geometry}
-				material={nodes.EntranceTile2.material}
 				position={[1.823, 0.037, 1.95]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile3.geometry}
-				material={nodes.EntranceTile3.material}
 				position={[1.308, 0.037, 2.457]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile4.geometry}
-				material={nodes.EntranceTile4.material}
 				position={[1.854, 0.037, 2.457]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile5.geometry}
-				material={nodes.EntranceTile5.material}
 				position={[1.284, 0.037, 2.974]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile6.geometry}
-				material={nodes.EntranceTile6.material}
 				position={[1.854, 0.037, 2.974]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile7.geometry}
-				material={nodes.EntranceTile7.material}
 				position={[1.271, 0.037, 3.487]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.EntranceTile8.geometry}
-				material={nodes.EntranceTile8.material}
 				position={[1.832, 0.037, 3.487]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.HouseWall1.geometry}
-				material={nodes.HouseWall1.material}
 				position={[-0.347, 1.653, -2.045]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.HouseWall2.geometry}
-				material={nodes.HouseWall2.material}
 				position={[-2, 1.653, -0.135]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Wall_teteje2.geometry}
-				material={nodes.Wall_teteje2.material}
 				position={[-2.006, 3.164, -0.087]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallAlso.geometry}
-				material={nodes.WallAlso.material}
 				position={[-0.264, 0.106, -0.137]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallJobbAlsoAlso.geometry}
-				material={nodes.WallJobbAlsoAlso.material}
 				position={[-0.264, 0.106, -2.044]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallJobbAlsoAlso001.geometry}
-				material={nodes.WallJobbAlsoAlso001.material}
 				position={[-2.001, 0.106, -0.22]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTeteje1.geometry}
-				material={nodes.WallTeteje1.material}
 				position={[-0.309, 3.164, -2.045]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.HouseFloor.geometry}
-				material={nodes.HouseFloor.material}
 				position={[-0.263, 0.27, -0.137]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles01.geometry}
-				material={nodes.WallTiles01.material}
 				position={[1.303, 1.4, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles02.geometry}
-				material={nodes.WallTiles02.material}
 				position={[1.303, 1.205, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles03.geometry}
-				material={nodes.WallTiles03.material}
 				position={[1.303, 1.01, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles04.geometry}
-				material={nodes.WallTiles04.material}
 				position={[1.303, 0.815, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles05.geometry}
-				material={nodes.WallTiles05.material}
 				position={[1.303, 0.621, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles06.geometry}
-				material={nodes.WallTiles06.material}
 				position={[1.303, 0.426, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles0007.geometry}
-				material={nodes.WallTiles0007.material}
 				position={[-1.904, 1.4, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles0008.geometry}
-				material={nodes.WallTiles0008.material}
 				position={[-1.904, 1.205, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles0009.geometry}
-				material={nodes.WallTiles0009.material}
 				position={[-1.904, 1.01, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles0010.geometry}
-				material={nodes.WallTiles0010.material}
 				position={[-1.904, 0.815, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles0011.geometry}
-				material={nodes.WallTiles0011.material}
 				position={[-1.904, 0.621, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles0012.geometry}
-				material={nodes.WallTiles0012.material}
 				position={[-1.904, 0.426, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1.geometry}
-				material={nodes.WallTiles1.material}
 				position={[-1.909, 1.4, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1001.geometry}
-				material={nodes.WallTiles1001.material}
 				position={[-1.909, 1.4, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1002.geometry}
-				material={nodes.WallTiles1002.material}
 				position={[-1.909, 1.4, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1003.geometry}
-				material={nodes.WallTiles1003.material}
 				position={[-1.909, 1.4, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1004.geometry}
-				material={nodes.WallTiles1004.material}
 				position={[-1.909, 1.4, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1005.geometry}
-				material={nodes.WallTiles1005.material}
 				position={[-1.909, 1.4, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1006.geometry}
-				material={nodes.WallTiles1006.material}
 				position={[-1.909, 1.4, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1007.geometry}
-				material={nodes.WallTiles1007.material}
 				position={[-1.909, 1.4, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1008.geometry}
-				material={nodes.WallTiles1008.material}
 				position={[-1.909, 1.4, -1.756]}
 			>
 				{" "}
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1009.geometry}
-				material={nodes.WallTiles1009.material}
 				position={[-1.909, 1.205, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1010.geometry}
-				material={nodes.WallTiles1010.material}
 				position={[-1.909, 1.205, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1011.geometry}
-				material={nodes.WallTiles1011.material}
 				position={[-1.909, 1.205, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1012.geometry}
-				material={nodes.WallTiles1012.material}
 				position={[-1.909, 1.205, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1013.geometry}
-				material={nodes.WallTiles1013.material}
 				position={[-1.909, 1.205, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1014.geometry}
-				material={nodes.WallTiles1014.material}
 				position={[-1.909, 1.205, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1015.geometry}
-				material={nodes.WallTiles1015.material}
 				position={[-1.909, 1.205, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1016.geometry}
-				material={nodes.WallTiles1016.material}
 				position={[-1.909, 1.205, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1017.geometry}
-				material={nodes.WallTiles1017.material}
 				position={[-1.909, 1.205, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1018.geometry}
-				material={nodes.WallTiles1018.material}
 				position={[-1.909, 1.01, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1019.geometry}
-				material={nodes.WallTiles1019.material}
 				position={[-1.909, 1.01, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1020.geometry}
-				material={nodes.WallTiles1020.material}
 				position={[-1.909, 1.01, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1021.geometry}
-				material={nodes.WallTiles1021.material}
 				position={[-1.909, 1.01, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1022.geometry}
-				material={nodes.WallTiles1022.material}
 				position={[-1.909, 1.01, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1023.geometry}
-				material={nodes.WallTiles1023.material}
 				position={[-1.909, 1.01, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1024.geometry}
-				material={nodes.WallTiles1024.material}
 				position={[-1.909, 1.01, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1025.geometry}
-				material={nodes.WallTiles1025.material}
 				position={[-1.909, 1.01, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1026.geometry}
-				material={nodes.WallTiles1026.material}
 				position={[-1.909, 1.01, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1027.geometry}
-				material={nodes.WallTiles1027.material}
 				position={[-1.909, 0.815, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1028.geometry}
-				material={nodes.WallTiles1028.material}
 				position={[-1.909, 0.815, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1029.geometry}
-				material={nodes.WallTiles1029.material}
 				position={[-1.909, 0.815, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1030.geometry}
-				material={nodes.WallTiles1030.material}
 				position={[-1.909, 0.815, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1031.geometry}
-				material={nodes.WallTiles1031.material}
 				position={[-1.909, 0.815, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1032.geometry}
-				material={nodes.WallTiles1032.material}
 				position={[-1.909, 0.815, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1033.geometry}
-				material={nodes.WallTiles1033.material}
 				position={[-1.909, 0.815, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1034.geometry}
-				material={nodes.WallTiles1034.material}
 				position={[-1.909, 0.815, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1035.geometry}
-				material={nodes.WallTiles1035.material}
 				position={[-1.909, 0.815, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1036.geometry}
-				material={nodes.WallTiles1036.material}
 				position={[-1.909, 0.621, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1037.geometry}
-				material={nodes.WallTiles1037.material}
 				position={[-1.909, 0.621, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1038.geometry}
-				material={nodes.WallTiles1038.material}
 				position={[-1.909, 0.621, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1039.geometry}
-				material={nodes.WallTiles1039.material}
 				position={[-1.909, 0.621, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1040.geometry}
-				material={nodes.WallTiles1040.material}
 				position={[-1.909, 0.621, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1041.geometry}
-				material={nodes.WallTiles1041.material}
 				position={[-1.909, 0.621, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1042.geometry}
-				material={nodes.WallTiles1042.material}
 				position={[-1.909, 0.621, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1043.geometry}
-				material={nodes.WallTiles1043.material}
 				position={[-1.909, 0.621, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1044.geometry}
-				material={nodes.WallTiles1044.material}
 				position={[-1.909, 0.621, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1045.geometry}
-				material={nodes.WallTiles1045.material}
 				position={[-1.909, 0.426, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1046.geometry}
-				material={nodes.WallTiles1046.material}
 				position={[-1.909, 0.426, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1047.geometry}
-				material={nodes.WallTiles1047.material}
 				position={[-1.909, 0.426, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1048.geometry}
-				material={nodes.WallTiles1048.material}
 				position={[-1.909, 0.426, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1049.geometry}
-				material={nodes.WallTiles1049.material}
 				position={[-1.909, 0.426, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1050.geometry}
-				material={nodes.WallTiles1050.material}
 				position={[-1.909, 0.426, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1051.geometry}
-				material={nodes.WallTiles1051.material}
 				position={[-1.909, 0.426, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1052.geometry}
-				material={nodes.WallTiles1052.material}
 				position={[-1.909, 0.426, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles1053.geometry}
-				material={nodes.WallTiles1053.material}
 				position={[-1.909, 0.426, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2.geometry}
-				material={nodes.WallTiles2.material}
 				position={[-1.759, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2001.geometry}
-				material={nodes.WallTiles2001.material}
 				position={[-1.446, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2002.geometry}
-				material={nodes.WallTiles2002.material}
 				position={[-1.132, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2003.geometry}
-				material={nodes.WallTiles2003.material}
 				position={[-0.819, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2004.geometry}
-				material={nodes.WallTiles2004.material}
 				position={[-0.505, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2005.geometry}
-				material={nodes.WallTiles2005.material}
 				position={[-0.192, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2006.geometry}
-				material={nodes.WallTiles2006.material}
 				position={[0.122, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2007.geometry}
-				material={nodes.WallTiles2007.material}
 				position={[0.436, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2008.geometry}
-				material={nodes.WallTiles2008.material}
 				position={[0.749, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2009.geometry}
-				material={nodes.WallTiles2009.material}
 				position={[-1.759, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2010.geometry}
-				material={nodes.WallTiles2010.material}
 				position={[-1.446, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2011.geometry}
-				material={nodes.WallTiles2011.material}
 				position={[-1.132, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2012.geometry}
-				material={nodes.WallTiles2012.material}
 				position={[-0.819, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2013.geometry}
-				material={nodes.WallTiles2013.material}
 				position={[-0.505, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2014.geometry}
-				material={nodes.WallTiles2014.material}
 				position={[-0.192, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2015.geometry}
-				material={nodes.WallTiles2015.material}
 				position={[0.122, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2016.geometry}
-				material={nodes.WallTiles2016.material}
 				position={[0.436, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2017.geometry}
-				material={nodes.WallTiles2017.material}
 				position={[0.749, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2018.geometry}
-				material={nodes.WallTiles2018.material}
 				position={[-1.759, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2019.geometry}
-				material={nodes.WallTiles2019.material}
 				position={[-1.446, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2020.geometry}
-				material={nodes.WallTiles2020.material}
 				position={[-1.132, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2021.geometry}
-				material={nodes.WallTiles2021.material}
 				position={[-0.819, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2022.geometry}
-				material={nodes.WallTiles2022.material}
 				position={[-0.505, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2023.geometry}
-				material={nodes.WallTiles2023.material}
 				position={[-0.192, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2024.geometry}
-				material={nodes.WallTiles2024.material}
 				position={[0.122, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2025.geometry}
-				material={nodes.WallTiles2025.material}
 				position={[0.436, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2026.geometry}
-				material={nodes.WallTiles2026.material}
 				position={[0.749, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2027.geometry}
-				material={nodes.WallTiles2027.material}
 				position={[-1.759, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2028.geometry}
-				material={nodes.WallTiles2028.material}
 				position={[-1.446, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2029.geometry}
-				material={nodes.WallTiles2029.material}
 				position={[-1.132, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2030.geometry}
-				material={nodes.WallTiles2030.material}
 				position={[-0.819, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2031.geometry}
-				material={nodes.WallTiles2031.material}
 				position={[-0.505, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2032.geometry}
-				material={nodes.WallTiles2032.material}
 				position={[-0.192, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2033.geometry}
-				material={nodes.WallTiles2033.material}
 				position={[0.122, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2034.geometry}
-				material={nodes.WallTiles2034.material}
 				position={[0.436, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2035.geometry}
-				material={nodes.WallTiles2035.material}
 				position={[0.749, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2036.geometry}
-				material={nodes.WallTiles2036.material}
 				position={[-1.759, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2037.geometry}
-				material={nodes.WallTiles2037.material}
 				position={[-1.446, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2038.geometry}
-				material={nodes.WallTiles2038.material}
 				position={[-1.132, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2039.geometry}
-				material={nodes.WallTiles2039.material}
 				position={[-0.819, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2040.geometry}
-				material={nodes.WallTiles2040.material}
 				position={[-0.505, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2041.geometry}
-				material={nodes.WallTiles2041.material}
 				position={[-0.192, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2042.geometry}
-				material={nodes.WallTiles2042.material}
 				position={[0.122, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2043.geometry}
-				material={nodes.WallTiles2043.material}
 				position={[0.436, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2044.geometry}
-				material={nodes.WallTiles2044.material}
 				position={[0.749, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2045.geometry}
-				material={nodes.WallTiles2045.material}
 				position={[-1.759, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2046.geometry}
-				material={nodes.WallTiles2046.material}
 				position={[-1.446, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2047.geometry}
-				material={nodes.WallTiles2047.material}
 				position={[-1.132, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2048.geometry}
-				material={nodes.WallTiles2048.material}
 				position={[-0.819, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2049.geometry}
-				material={nodes.WallTiles2049.material}
 				position={[-0.505, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2050.geometry}
-				material={nodes.WallTiles2050.material}
 				position={[-0.192, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2051.geometry}
-				material={nodes.WallTiles2051.material}
 				position={[0.122, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2052.geometry}
-				material={nodes.WallTiles2052.material}
 				position={[0.436, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2053.geometry}
-				material={nodes.WallTiles2053.material}
 				position={[0.749, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2054.geometry}
-				material={nodes.WallTiles2054.material}
 				position={[1.062, 1.4, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2055.geometry}
-				material={nodes.WallTiles2055.material}
 				position={[1.062, 1.205, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2056.geometry}
-				material={nodes.WallTiles2056.material}
 				position={[1.062, 1.01, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2057.geometry}
-				material={nodes.WallTiles2057.material}
 				position={[1.062, 0.815, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2058.geometry}
-				material={nodes.WallTiles2058.material}
 				position={[1.062, 0.621, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.WallTiles2059.geometry}
-				material={nodes.WallTiles2059.material}
 				position={[1.062, 0.426, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.ModernKitchenTable1.geometry}
-				material={nodes.ModernKitchenTable1.material}
 				position={[-0.092, 0.894, 1.246]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.ModernKitchenTable1001.geometry}
-				material={nodes.ModernKitchenTable1001.material}
 				position={[1.042, 0.889, 0.905]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Cabinet_new.geometry}
-				material={nodes.Cabinet_new.material}
 				position={[-1.12, 2.28, -1.821]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Cabinet_Shelf_B007_Material_0.geometry}
-				material={nodes.Cabinet_Shelf_B007_Material_0.material}
 				position={[-1.773, 2.28, -0.815]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.CabinetTable_B002_Material_0001.geometry}
-				material={nodes.CabinetTable_B002_Material_0001.material}
 				position={[-1.389, 0.865, -1.008]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes["38_Kitche1001"].geometry}
-				material={nodes["38_Kitche1001"].material}
 				position={[-0.809, 1.429, -1.653]}
 			>
 				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.FlowerPot4.geometry}
-				material={nodes.FlowerPot4.material}
 				position={[-1.4, 1.086, 1.47]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 			<mesh
-				castShadow
-				receiveShadow
 				geometry={nodes.Window.geometry}
-				material={nodes.Window.material}
 				position={[0.211, 2.105, -1.901]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.Table.geometry}
-				material={nodes.Table.material}
-				position={[3.586, 0.097, 0.799]}
-			>
+			<mesh geometry={nodes.Table.geometry} position={[3.586, 0.097, 0.799]}>
 				<meshBasicMaterial map={bakedTexture} />
 			</mesh>
 		</group>
