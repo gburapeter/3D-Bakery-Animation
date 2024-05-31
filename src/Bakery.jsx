@@ -25,7 +25,7 @@ export function Bakery(props) {
 
 	return (
 		<group position-y={-1} {...props} dispose={null}>
-			<mesh geometry={nodes.Node.geometry} position={[0.169, 1.233, -1.532]}>
+			{/* <mesh geometry={nodes.Node.geometry} position={[0.169, 1.233, -1.532]}>
 				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
 			<mesh
@@ -240,11 +240,16 @@ export function Bakery(props) {
 				position={[3.507, 0.306, -0.163]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh castShadow receiveShadow geometry={nodes.Terrain.geometry}>
+			</mesh> */}
+			<e.mesh
+				theatreKey="Terrain"
+				castShadow
+				receiveShadow
+				geometry={nodes.Terrain.geometry}
+			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			{/* <mesh
 				geometry={nodes.EntranceTile1.geometry}
 				position={[1.308, 0.037, 1.95]}
 			>
@@ -291,813 +296,821 @@ export function Bakery(props) {
 				position={[1.832, 0.037, 3.487]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</mesh> */}
+			<e.mesh
+				theatreKey="HouseWall1"
 				geometry={nodes.HouseWall1.geometry}
 				position={[-0.347, 1.653, -2.045]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="HouseWall2"
 				geometry={nodes.HouseWall2.geometry}
 				position={[-2, 1.653, -0.135]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="WallTeteje2"
 				geometry={nodes.Wall_teteje2.geometry}
 				position={[-2.006, 3.164, -0.087]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="HazElsoResze"
 				geometry={nodes.WallAlso.geometry}
 				position={[-0.264, 0.106, -0.137]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="HazElsoResze2"
 				geometry={nodes.WallJobbAlsoAlso.geometry}
 				position={[-0.264, 0.106, -2.044]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="HazElsoResze3"
 				geometry={nodes.WallJobbAlsoAlso001.geometry}
 				position={[-2.001, 0.106, -0.22]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="WallTeteje1"
 				geometry={nodes.WallTeteje1.geometry}
 				position={[-0.309, 3.164, -2.045]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="HouseFloor"
 				geometry={nodes.HouseFloor.geometry}
 				position={[-0.263, 0.27, -0.137]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles01.geometry}
 				position={[1.303, 1.4, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles02.geometry}
 				position={[1.303, 1.205, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles03.geometry}
 				position={[1.303, 1.01, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles04.geometry}
 				position={[1.303, 0.815, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles05.geometry}
 				position={[1.303, 0.621, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles06.geometry}
 				position={[1.303, 0.426, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles0007.geometry}
 				position={[-1.904, 1.4, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles0008.geometry}
 				position={[-1.904, 1.205, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles0009.geometry}
 				position={[-1.904, 1.01, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles0010.geometry}
 				position={[-1.904, 0.815, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles0011.geometry}
 				position={[-1.904, 0.621, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles0012.geometry}
 				position={[-1.904, 0.426, 1.637]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1.geometry}
 				position={[-1.909, 1.4, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1001.geometry}
 				position={[-1.909, 1.4, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1002.geometry}
 				position={[-1.909, 1.4, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1003.geometry}
 				position={[-1.909, 1.4, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1004.geometry}
 				position={[-1.909, 1.4, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1005.geometry}
 				position={[-1.909, 1.4, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1006.geometry}
 				position={[-1.909, 1.4, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1007.geometry}
 				position={[-1.909, 1.4, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1008.geometry}
 				position={[-1.909, 1.4, -1.756]}
 			>
 				{" "}
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1009.geometry}
 				position={[-1.909, 1.205, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1010.geometry}
 				position={[-1.909, 1.205, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1011.geometry}
 				position={[-1.909, 1.205, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1012.geometry}
 				position={[-1.909, 1.205, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1013.geometry}
 				position={[-1.909, 1.205, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1014.geometry}
 				position={[-1.909, 1.205, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1015.geometry}
 				position={[-1.909, 1.205, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1016.geometry}
 				position={[-1.909, 1.205, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1017.geometry}
 				position={[-1.909, 1.205, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1018.geometry}
 				position={[-1.909, 1.01, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1019.geometry}
 				position={[-1.909, 1.01, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1020.geometry}
 				position={[-1.909, 1.01, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1021.geometry}
 				position={[-1.909, 1.01, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1022.geometry}
 				position={[-1.909, 1.01, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1023.geometry}
 				position={[-1.909, 1.01, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1024.geometry}
 				position={[-1.909, 1.01, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1025.geometry}
 				position={[-1.909, 1.01, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1026.geometry}
 				position={[-1.909, 1.01, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1027.geometry}
 				position={[-1.909, 0.815, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1028.geometry}
 				position={[-1.909, 0.815, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1029.geometry}
 				position={[-1.909, 0.815, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1030.geometry}
 				position={[-1.909, 0.815, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1031.geometry}
 				position={[-1.909, 0.815, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1032.geometry}
 				position={[-1.909, 0.815, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1033.geometry}
 				position={[-1.909, 0.815, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1034.geometry}
 				position={[-1.909, 0.815, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1035.geometry}
 				position={[-1.909, 0.815, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1036.geometry}
 				position={[-1.909, 0.621, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1037.geometry}
 				position={[-1.909, 0.621, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1038.geometry}
 				position={[-1.909, 0.621, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1039.geometry}
 				position={[-1.909, 0.621, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1040.geometry}
 				position={[-1.909, 0.621, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1041.geometry}
 				position={[-1.909, 0.621, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1042.geometry}
 				position={[-1.909, 0.621, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1043.geometry}
 				position={[-1.909, 0.621, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1044.geometry}
 				position={[-1.909, 0.621, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1045.geometry}
 				position={[-1.909, 0.426, 1.379]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1046.geometry}
 				position={[-1.909, 0.426, 0.987]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1047.geometry}
 				position={[-1.909, 0.426, 0.595]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1048.geometry}
 				position={[-1.909, 0.426, 0.204]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1049.geometry}
 				position={[-1.909, 0.426, -0.188]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1050.geometry}
 				position={[-1.909, 0.426, -0.58]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1051.geometry}
 				position={[-1.909, 0.426, -0.972]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1052.geometry}
 				position={[-1.909, 0.426, -1.364]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles1053.geometry}
 				position={[-1.909, 0.426, -1.756]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2.geometry}
 				position={[-1.759, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2001.geometry}
 				position={[-1.446, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2002.geometry}
 				position={[-1.132, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2003.geometry}
 				position={[-0.819, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2004.geometry}
 				position={[-0.505, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2005.geometry}
 				position={[-0.192, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2006.geometry}
 				position={[0.122, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2007.geometry}
 				position={[0.436, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2008.geometry}
 				position={[0.749, 1.4, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2009.geometry}
 				position={[-1.759, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2010.geometry}
 				position={[-1.446, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2011.geometry}
 				position={[-1.132, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2012.geometry}
 				position={[-0.819, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2013.geometry}
 				position={[-0.505, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2014.geometry}
 				position={[-0.192, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2015.geometry}
 				position={[0.122, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2016.geometry}
 				position={[0.436, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2017.geometry}
 				position={[0.749, 1.205, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2018.geometry}
 				position={[-1.759, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2019.geometry}
 				position={[-1.446, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2020.geometry}
 				position={[-1.132, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2021.geometry}
 				position={[-0.819, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2022.geometry}
 				position={[-0.505, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2023.geometry}
 				position={[-0.192, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2024.geometry}
 				position={[0.122, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2025.geometry}
 				position={[0.436, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2026.geometry}
 				position={[0.749, 1.01, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2027.geometry}
 				position={[-1.759, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2028.geometry}
 				position={[-1.446, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2029.geometry}
 				position={[-1.132, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2030.geometry}
 				position={[-0.819, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2031.geometry}
 				position={[-0.505, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2032.geometry}
 				position={[-0.192, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2033.geometry}
 				position={[0.122, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2034.geometry}
 				position={[0.436, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2035.geometry}
 				position={[0.749, 0.815, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2036.geometry}
 				position={[-1.759, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2037.geometry}
 				position={[-1.446, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2038.geometry}
 				position={[-1.132, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2039.geometry}
 				position={[-0.819, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2040.geometry}
 				position={[-0.505, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2041.geometry}
 				position={[-0.192, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2042.geometry}
 				position={[0.122, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2043.geometry}
 				position={[0.436, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2044.geometry}
 				position={[0.749, 0.621, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2045.geometry}
 				position={[-1.759, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2046.geometry}
 				position={[-1.446, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2047.geometry}
 				position={[-1.132, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2048.geometry}
 				position={[-0.819, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2049.geometry}
 				position={[-0.505, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2050.geometry}
 				position={[-0.192, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2051.geometry}
 				position={[0.122, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2052.geometry}
 				position={[0.436, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2053.geometry}
 				position={[0.749, 0.426, -1.961]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2054.geometry}
 				position={[1.062, 1.4, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2055.geometry}
 				position={[1.062, 1.205, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2056.geometry}
 				position={[1.062, 1.01, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2057.geometry}
 				position={[1.062, 0.815, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2058.geometry}
 				position={[1.062, 0.621, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
 				geometry={nodes.WallTiles2059.geometry}
 				position={[1.062, 0.426, -1.955]}
 			>
 				<meshBasicMaterial map={tilesTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			{/* <mesh
 				geometry={nodes.ModernKitchenTable1.geometry}
 				position={[-0.092, 0.894, 1.246]}
 			>
@@ -1147,7 +1160,7 @@ export function Bakery(props) {
 			</mesh>
 			<mesh geometry={nodes.Table.geometry} position={[3.586, 0.097, 0.799]}>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
+			</mesh> */}
 		</group>
 	);
 }
