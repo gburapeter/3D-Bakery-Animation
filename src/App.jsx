@@ -42,10 +42,11 @@ function App() {
 					{/* <CameraControls minPolarAngle={0} maxPolarAngle={Math.PI / 1.6} /> */}
 					<OrbitControls
 						enableZoom={false}
+						enablePan={false}
 						// maxPolarAngle={Math.PI / 4}
 						// minPolarAngle={0}
-						// maxAzimuthAngle={Math.PI / 4}
-						// minAzimuthAngle={-Math.PI / 4}
+						maxAzimuthAngle={Math.PI / 2}
+						minAzimuthAngle={-Math.PI / 4}
 					/>
 					<Bakery />
 					{/* </PresentationControls> */}
