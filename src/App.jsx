@@ -9,7 +9,7 @@ import { Bakery } from "./Bakery";
 import { getProject } from "@theatre/core";
 import studio from "@theatre/studio";
 import extension from "@theatre/r3f/dist/extension";
-import { SheetProvider } from "@theatre/r3f";
+import { OrthographicCamera, SheetProvider } from "@theatre/r3f";
 
 studio.initialize();
 studio.extend(extension);
@@ -23,28 +23,33 @@ function App() {
 	// }, []);
 	return (
 		<>
-			<Canvas
-				flat
-				orthographic
-				camera={{
-					position: [0, 3, 10],
-					zoom: 110,
-				}}
-			>
+			<Canvas flat>
 				<SheetProvider sheet={demoSheet}>
+					<OrthographicCamera
+						theatreKey="camera"
+						makeDefault
+						position={[16.29, 12.09, 17.06]}
+						zoom={110}
+					/>
 					{/* <PresentationControls
-					snap
-					global
-					zoom={0.8}
-					rotation={[0, -Math.PI / 4, 0]}
-					polar={[0, Math.PI / 4]}
-					azimuth={[-Math.PI / 4, Math.PI / 4]}
-				> */}
+						snap
+						global
+						zoom={0.8}
+						rotation={[0, -Math.PI / 4, 0]}
+						polar={[0, Math.PI / 4]}
+						azimuth={[-Math.PI / 4, Math.PI / 4]}
+					> */}
 					{/* <CameraControls minPolarAngle={0} maxPolarAngle={Math.PI / 1.6} /> */}
-					<OrbitControls />
+					<OrbitControls
+						enableZoom={false}
+						// maxPolarAngle={Math.PI / 4}
+						// minPolarAngle={0}
+						// maxAzimuthAngle={Math.PI / 4}
+						// minAzimuthAngle={-Math.PI / 4}
+					/>
 					<Bakery />
+					{/* </PresentationControls> */}
 				</SheetProvider>
-				{/* </PresentationControls> */}
 			</Canvas>
 		</>
 	);

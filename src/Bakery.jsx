@@ -24,7 +24,7 @@ export function Bakery(props) {
 	cakeTexture.flipY = false;
 
 	return (
-		<group {...props} dispose={null}>
+		<group position-y={-1} {...props} dispose={null}>
 			<mesh geometry={nodes.Node.geometry} position={[0.169, 1.233, -1.532]}>
 				<meshBasicMaterial map={cakeTexture} />
 			</mesh>
