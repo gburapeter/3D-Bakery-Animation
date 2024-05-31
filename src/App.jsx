@@ -6,7 +6,15 @@ import {
 import { Canvas } from "@react-three/fiber";
 import "./App.css";
 import { Bakery } from "./Bakery";
+import { getProject } from "@theatre/core";
+import studio from "@theatre/studio";
+import extension from "@theatre/r3f/dist/extension";
+import { SheetProvider } from "@theatre/r3f";
 
+studio.initialize();
+studio.extend(extension);
+// our Theatre.js project sheet, we'll use this later
+const demoSheet = getProject("Demo Project").sheet("Demo Sheet");
 function App() {
 	// useEffect(() => {
 	// 	demoSheet.project.ready.then(() =>
@@ -23,7 +31,8 @@ function App() {
 					zoom: 110,
 				}}
 			>
-				{/* <PresentationControls
+				<SheetProvider sheet={demoSheet}>
+					{/* <PresentationControls
 					snap
 					global
 					zoom={0.8}
@@ -31,9 +40,10 @@ function App() {
 					polar={[0, Math.PI / 4]}
 					azimuth={[-Math.PI / 4, Math.PI / 4]}
 				> */}
-				{/* <CameraControls minPolarAngle={0} maxPolarAngle={Math.PI / 1.6} /> */}
-				<OrbitControls />
-				<Bakery />
+					{/* <CameraControls minPolarAngle={0} maxPolarAngle={Math.PI / 1.6} /> */}
+					<OrbitControls />
+					<Bakery />
+				</SheetProvider>
 				{/* </PresentationControls> */}
 			</Canvas>
 		</>
