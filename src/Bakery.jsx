@@ -14,7 +14,7 @@ export function Bakery(props) {
 
 	bakedTexture.flipY = false;
 
-	const tilesTexture = useTexture("/tiles-min.jpg");
+	const tilesTexture = useTexture("/tiles.jpg");
 
 	tilesTexture.flipY = false;
 
