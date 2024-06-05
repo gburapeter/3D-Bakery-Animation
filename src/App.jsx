@@ -27,9 +27,8 @@ function App() {
 	useEffect(() => {
 		demoSheet.project.ready.then(() => {
 			setTimeout(() => {
-				console.log("Delayed for 1 second.");
-			}, "5000");
-			demoSheet.sequence.play();
+				demoSheet.sequence.play();
+			}, 5000);
 		});
 	}, []);
 
