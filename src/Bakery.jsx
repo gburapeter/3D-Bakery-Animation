@@ -1349,9 +1349,13 @@ export function Bakery(props) {
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</e.mesh>
-			<mesh geometry={nodes.Table.geometry} position={[3.586, 0.097, 0.799]}>
+			<e.mesh
+				theatreKey="OutsideTable"
+				geometry={nodes.Table.geometry}
+				position={[3.586, 0.097, 0.799]}
+			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
+			</e.mesh>
 		</group>
 	);
 }

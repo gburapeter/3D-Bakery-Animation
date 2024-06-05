@@ -10,11 +10,13 @@ import { getProject } from "@theatre/core";
 import studio from "@theatre/studio";
 import extension from "@theatre/r3f/dist/extension";
 import { OrthographicCamera, SheetProvider } from "@theatre/r3f";
-import demoProjectState from "./getstate.json";
+import demoProjectState from "./usethis.json";
 
 import { useEffect } from "react";
-studio.initialize();
-studio.extend(extension);
+if (import.meta.env.DEV) {
+	studio.initialize();
+	studio.extend(extension);
+}
 // our Theatre.js project sheet, we'll use this later
 // const demoSheet = getProject("Demo Project").sheet("Demo Sheet");
 const demoSheet = getProject("Demo Project", { state: demoProjectState }).sheet(
@@ -22,12 +24,14 @@ const demoSheet = getProject("Demo Project", { state: demoProjectState }).sheet(
 );
 console.log(demoSheet);
 function App() {
-	// useEffect(() => {
-	// 	demoSheet.project.ready.then(() =>
-	// 		demoSheet.sequence.play({ iterationCount: 1, range: [0, 4.36] })
-	// 	);
-
-	// }, []);
+	useEffect(() => {
+		demoSheet.project.ready.then(() => {
+			setTimeout(() => {
+				console.log("Delayed for 1 second.");
+			}, "1000");
+			demoSheet.sequence.play();
+		});
+	}, []);
 
 	return (
 		<>
