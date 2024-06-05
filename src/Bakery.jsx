@@ -25,222 +25,272 @@ export function Bakery(props) {
 
 	return (
 		<group position-y={-1} {...props} dispose={null}>
-			{/* <mesh geometry={nodes.Node.geometry} position={[0.169, 1.233, -1.532]}>
+			<e.mesh
+				theatreKey="Kesztyu"
+				geometry={nodes.Node.geometry}
+				position={[0.169, 1.233, -1.532]}
+			>
 				<meshBasicMaterial map={cakeTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut1"
 				geometry={nodes.donutSprinkles.geometry}
 				position={[0.383, 1.161, 1.091]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut2"
 				geometry={nodes.donutSprinkles001.geometry}
 				position={[0.216, 1.161, 1.23]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut3"
 				geometry={nodes.donutSprinkles002.geometry}
 				position={[0.536, 1.161, 1.281]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut4"
 				geometry={nodes.donutSprinkles003.geometry}
 				position={[0.363, 1.161, 1.4]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut5"
 				geometry={nodes.donutSprinkles004.geometry}
 				position={[-0.458, 1.161, 1.131]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut6"
 				geometry={nodes.donutSprinkles005.geometry}
 				position={[-0.244, 1.161, 1.131]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut7"
 				geometry={nodes.donutSprinkles006.geometry}
 				position={[-0.244, 1.161, 1.413]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Donut8"
 				geometry={nodes.donutSprinkles007.geometry}
 				position={[-0.458, 1.161, 1.393]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey1"
 				geometry={nodes.Honey.geometry}
 				position={[-1.765, 2.675, -0.523]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="WallFrame"
 				geometry={nodes.WallFrame.geometry}
 				position={[-1.885, 2.387, 1.015]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey2"
 				geometry={nodes.Honey001.geometry}
 				position={[-1.288, 2.668, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey3"
 				geometry={nodes.Honey002.geometry}
 				position={[-0.863, 2.668, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey4"
 				geometry={nodes.Honey003.geometry}
 				position={[-0.863, 2.316, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey5"
 				geometry={nodes.Honey004.geometry}
 				position={[-1.307, 2.316, -1.798]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey6"
 				geometry={nodes.Honey005.geometry}
 				position={[-1.765, 2.675, -1.018]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey7"
 				geometry={nodes.Honey006.geometry}
 				position={[-1.765, 2.324, -1.018]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Honey8"
 				geometry={nodes.Honey007.geometry}
 				position={[-1.765, 2.324, -0.571]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="BreadShelf"
 				geometry={nodes.BreadShelf.geometry}
 				position={[-1.672, 1.351, 0.368]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf1"
 				geometry={nodes.loafBaguette002.geometry}
 				position={[-1.614, 1.509, 0.172]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf2"
 				geometry={nodes.Loaf2001.geometry}
 				position={[-1.645, 1.904, 0.478]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf3"
 				geometry={nodes.Loaf2002.geometry}
 				position={[-1.645, 1.904, 0.227]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf4"
 				geometry={nodes.Loaf2003.geometry}
 				position={[-1.585, 1.166, 0.544]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf5"
 				geometry={nodes.Loaf2004.geometry}
 				position={[-1.585, 1.166, 0.333]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf6"
 				geometry={nodes.Loaf2005.geometry}
 				position={[-1.585, 1.166, 0.142]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf7"
 				geometry={nodes.loafBaguette001.geometry}
 				position={[-1.614, 1.509, 0.351]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Loaf8"
 				geometry={nodes.loafBaguette003.geometry}
 				position={[-1.614, 1.509, 0.572]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh geometry={nodes.Cake1.geometry} position={[1.122, 1.233, 1.27]}>
+			</e.mesh>
+			<e.mesh
+				theatreKey="Cake1"
+				geometry={nodes.Cake1.geometry}
+				position={[1.122, 1.233, 1.27]}
+			>
 				<meshBasicMaterial map={cakeTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Cake2"
 				geometry={nodes.Cake1001.geometry}
 				position={[1.122, 1.233, 0.609]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Cabinet_Front"
 				geometry={nodes.Cabinet_FrontA006_Material_0002.geometry}
 				position={[-0.19, 1.14, -1.552]}
 			>
 				<meshBasicMaterial map={cakeTexture} />
-			</mesh>
-			<mesh geometry={nodes.Oven.geometry} position={[0.737, 1.125, -1.32]}>
+			</e.mesh>
+			<e.mesh
+				theatreKey="Oven"
+				geometry={nodes.Oven.geometry}
+				position={[0.737, 1.125, -1.32]}
+			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Plate1"
 				geometry={nodes.Plate.geometry}
 				position={[-1.468, 1.252, -0.615]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="RollingPin"
 				geometry={nodes.Rolling_Pin_Q.geometry}
 				position={[-1.248, 1.272, -1.529]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="CookingEdeny"
 				geometry={nodes.CookingEdeny.geometry}
 				position={[-1.607, 1.372, -1.397]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Plate2"
 				geometry={nodes.Plate001.geometry}
 				position={[0.379, 1.138, 1.269]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Plate3"
 				geometry={nodes.Plate002.geometry}
 				position={[-0.351, 1.135, 1.269]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh geometry={nodes.chair.geometry} position={[3.507, 0.306, 1.844]}>
+			</e.mesh>
+			<e.mesh
+				theatreKey="Chair"
+				geometry={nodes.chair.geometry}
+				position={[3.507, 0.306, 1.844]}
+			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Chair2"
 				geometry={nodes.chair001.geometry}
 				position={[3.507, 0.306, -0.163]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh> */}
+			</e.mesh>
 			<e.mesh
 				theatreKey="Terrain"
 				castShadow
@@ -249,54 +299,62 @@ export function Bakery(props) {
 			>
 				<meshBasicMaterial map={bakedTexture} />
 			</e.mesh>
-			{/* <mesh
+			<e.mesh
+				theatreKey="EntranceTile1"
 				geometry={nodes.EntranceTile1.geometry}
 				position={[1.308, 0.037, 1.95]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="EntranceTile2"
 				geometry={nodes.EntranceTile2.geometry}
 				position={[1.823, 0.037, 1.95]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="EntranceTile3"
 				geometry={nodes.EntranceTile3.geometry}
 				position={[1.308, 0.037, 2.457]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="EntranceTile4"
 				geometry={nodes.EntranceTile4.geometry}
 				position={[1.854, 0.037, 2.457]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="EntranceTile5"
 				geometry={nodes.EntranceTile5.geometry}
 				position={[1.284, 0.037, 2.974]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="EntranceTile6"
 				geometry={nodes.EntranceTile6.geometry}
 				position={[1.854, 0.037, 2.974]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="EntranceTile7"
 				geometry={nodes.EntranceTile7.geometry}
 				position={[1.271, 0.037, 3.487]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="EntranceTile8"
 				geometry={nodes.EntranceTile8.geometry}
 				position={[1.832, 0.037, 3.487]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh> */}
+			</e.mesh>
 			<e.mesh
 				theatreKey="HouseWall1"
 				geometry={nodes.HouseWall1.geometry}
@@ -1235,57 +1293,65 @@ export function Bakery(props) {
 			>
 				<meshBasicMaterial map={tilesTexture} />
 			</e.mesh>
-			{/* <mesh
+			<e.mesh
+				theatreKey="ModernKitchenTable1"
 				geometry={nodes.ModernKitchenTable1.geometry}
 				position={[-0.092, 0.894, 1.246]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="ModernKitchenTable2"
 				geometry={nodes.ModernKitchenTable1001.geometry}
 				position={[1.042, 0.889, 0.905]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Cabinet_new"
 				geometry={nodes.Cabinet_new.geometry}
 				position={[-1.12, 2.28, -1.821]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Cabinet_shelf"
 				geometry={nodes.Cabinet_Shelf_B007_Material_0.geometry}
 				position={[-1.773, 2.28, -0.815]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="CabinetTable"
 				geometry={nodes.CabinetTable_B002_Material_0001.geometry}
 				position={[-1.389, 0.865, -1.008]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Botmixer"
 				geometry={nodes["38_Kitche1001"].geometry}
 				position={[-0.809, 1.429, -1.653]}
 			>
 				<meshBasicMaterial map={cakeTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="FlowerPot"
 				geometry={nodes.FlowerPot4.geometry}
 				position={[-1.4, 1.086, 1.47]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
-			<mesh
+			</e.mesh>
+			<e.mesh
+				theatreKey="Window"
 				geometry={nodes.Window.geometry}
 				position={[0.211, 2.105, -1.901]}
 			>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh>
+			</e.mesh>
 			<mesh geometry={nodes.Table.geometry} position={[3.586, 0.097, 0.799]}>
 				<meshBasicMaterial map={bakedTexture} />
-			</mesh> */}
+			</mesh>
 		</group>
 	);
 }
