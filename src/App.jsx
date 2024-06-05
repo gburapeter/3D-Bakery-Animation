@@ -11,6 +11,7 @@ import studio from "@theatre/studio";
 import extension from "@theatre/r3f/dist/extension";
 import { OrthographicCamera, SheetProvider } from "@theatre/r3f";
 import demoProjectState from "./fixed.json";
+import BakeryMusic from "../src/assets/cute-bakery-music.mp3";
 
 import { useEffect } from "react";
 if (import.meta.env.DEV) {
@@ -28,7 +29,7 @@ function App() {
 			setTimeout(() => {
 				demoSheet.sequence
 
-					.attachAudio({ source: "/cute-bakery-music.mp3" })
+					.attachAudio({ source: BakeryMusic })
 					// this promise resolves immediately as everything is already provided
 					.then(() => {
 						demoSheet.sequence.play();
