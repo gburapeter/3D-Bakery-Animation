@@ -1,17 +1,13 @@
-import {
-	CameraControls,
-	OrbitControls,
-	PresentationControls,
-} from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { getProject } from "@theatre/core";
+import { OrthographicCamera, SheetProvider } from "@theatre/r3f";
+import extension from "@theatre/r3f/dist/extension";
+import studio from "@theatre/studio";
+import BakeryMusic from "../src/assets/cute-bakery-music.mp3";
 import "./App.css";
 import { Bakery } from "./Bakery";
-import { getProject } from "@theatre/core";
-import studio from "@theatre/studio";
-import extension from "@theatre/r3f/dist/extension";
-import { OrthographicCamera, SheetProvider } from "@theatre/r3f";
-import demoProjectState from "./fixed.json";
-import BakeryMusic from "../src/assets/cute-bakery-music.mp3";
+import demoProjectState from "./fixedv2.json";
 
 import { useEffect } from "react";
 if (import.meta.env.DEV) {
