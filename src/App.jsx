@@ -26,7 +26,13 @@ function App() {
 	useEffect(() => {
 		demoSheet.project.ready.then(() => {
 			setTimeout(() => {
-				demoSheet.sequence.play();
+				demoSheet.sequence
+
+					.attachAudio({ source: "/cute-bakery-music.mp3" })
+					// this promise resolves immediately as everything is already provided
+					.then(() => {
+						demoSheet.sequence.play();
+					});
 			}, 5000);
 		});
 	}, []);
