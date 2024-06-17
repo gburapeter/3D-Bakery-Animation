@@ -94,6 +94,13 @@ function App() {
 							<Replay />
 						</button> */}
 					</div>
+
+					<div className="fixed right-10 h-full inline-flex items-center  ">
+						<button className="" onClick={handleStart}>
+							<Arrow />
+							{/* <Replay /> */}
+						</button>
+					</div>
 				</div>
 			)}
 			<Canvas flat>
