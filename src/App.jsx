@@ -57,6 +57,7 @@ function App() {
 	const handleBack = () => {
 		setShowCanvas(false);
 		setReplayButton(false);
+		demoSheet.sequence.play({ range: [0, 13] });
 		demoSheet.sequence.pause();
 	};
 	return (
