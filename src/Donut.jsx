@@ -1,6 +1,5 @@
-import * as React from "react";
 import "./Donut.scss";
-const Donut = (props) => (
+const Donut = () => (
 	<svg
 		version="1.0"
 		xmlns="http://www.w3.org/2000/svg"

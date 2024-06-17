@@ -9,9 +9,10 @@ import demoProjectState from "./fixedv2.json";
 // import extension from "@theatre/r3f/dist/extension";
 // import studio from "@theatre/studio";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Arrow from "./CustomButtons/Arrow";
 import Donut from "./Donut";
-import { Overlay } from "./Overlay";
+import Replay from "./CustomButtons/Replay";
 
 // if (import.meta.env.DEV) {
 // 	studio.initialize();
@@ -88,9 +89,10 @@ function App() {
 
 					<div className="fixed inset-0 w-full h-full justify-center inline-flex ">
 						<Donut />
-						<button className=" hover:bg-red-500" onClick={handleStart}>
-							start
-						</button>
+						{/* <button className="h-fit" onClick={handleStart}>
+							<Arrow />
+							<Replay />
+						</button> */}
 					</div>
 				</div>
 			)}
