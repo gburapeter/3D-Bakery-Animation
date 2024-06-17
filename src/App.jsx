@@ -83,7 +83,7 @@ function App() {
 						</a>
 					</div>
 
-					<div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl lg:text-3xl ">
+					<div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl lg:text-2xl ">
 						{todaysDate}
 					</div>
 
