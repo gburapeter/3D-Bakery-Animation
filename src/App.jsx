@@ -9,11 +9,11 @@ import demoProjectState from "./fixedv2.json";
 // import extension from "@theatre/r3f/dist/extension";
 // import studio from "@theatre/studio";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Arrow from "./CustomButtons/Arrow";
 import Donut from "./Donut";
 import Replay from "./CustomButtons/Replay";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Back from "./CustomButtons/Back";
 
 // if (import.meta.env.DEV) {
@@ -40,7 +40,7 @@ function App() {
 					// this promise resolves immediately as everything is already provided
 					.then(() => {
 						demoSheet.sequence
-							.play({ range: [0, 13] })
+							.play({ range: [0, 12.5] })
 							.then(() => setReplayButton(true));
 					});
 			}, 1100);
@@ -50,16 +50,20 @@ function App() {
 	const handleReplay = () => {
 		setReplayButton(false);
 		demoSheet.sequence
-			.play({ range: [0, 13] })
+			.play({ range: [0, 12.5] })
 			.then(() => setReplayButton(true));
 	};
 
 	const handleBack = () => {
 		setShowCanvas(false);
 		setReplayButton(false);
-		demoSheet.sequence.play({ range: [0, 13] });
+		setIsFirstRender(true);
+		demoSheet.sequence.play({ range: [0, 12.5] });
 		demoSheet.sequence.pause();
 	};
+
+	const [notFirstRender, setIsFirstRender] = useState(false);
+
 	return (
 		<>
 			{!showCanvas && (
@@ -150,6 +154,22 @@ function App() {
 					className="privacy-screen"
 				/>
 			)}
+			{!showCanvas && notFirstRender && (
+				<motion.div
+					initial={{ scaleX: 1, opacity: 1 }}
+					animate={{
+						scaleX: 0,
+						opacity: 0.5,
+						transition: { duration: 1.1, ease: "easeInOut" },
+					}}
+					exit={{
+						scaleX: 1,
+						transition: { duration: 1.1, ease: "circIn" },
+					}}
+					style={{ originX: showCanvas ? 1 : 0 }}
+					className="privacy-screen"
+				/>
+			)}
 			{showReplayButton && showCanvas && (
 				<>
 					<div className="fixed left-20 z-50 w-full top-10  ">
@@ -158,7 +178,7 @@ function App() {
 							animate={{
 								opacity: 1,
 								transition: {
-									duration: 1,
+									duration: 0.7,
 									ease: "circInOut",
 								},
 							}}
@@ -175,7 +195,7 @@ function App() {
 							animate={{
 								opacity: 1,
 								transition: {
-									duration: 1,
+									duration: 0.7,
 									ease: "circInOut",
 								},
 							}}
