@@ -13,6 +13,7 @@ import { useState } from "react";
 import Arrow from "./CustomButtons/Arrow";
 import Donut from "./Donut";
 import Replay from "./CustomButtons/Replay";
+import { motion } from "framer-motion";
 
 // if (import.meta.env.DEV) {
 // 	studio.initialize();
@@ -38,7 +39,7 @@ function App() {
 					.then(() => {
 						demoSheet.sequence.play();
 					});
-			}, 600);
+			}, 1100);
 		});
 	};
 	return (
@@ -102,6 +103,22 @@ function App() {
 						</button>
 					</div>
 				</div>
+			)}
+			{showCanvas && (
+				<motion.div
+					initial={{ scaleX: 1, opacity: 1 }}
+					animate={{
+						scaleX: 0,
+						opacity: 0.5,
+						transition: { duration: 1.1, ease: "easeInOut" },
+					}}
+					exit={{
+						scaleX: 1,
+						transition: { duration: 1.1, ease: "circIn" },
+					}}
+					style={{ originX: showCanvas ? 0 : 1 }}
+					className="privacy-screen"
+				/>
 			)}
 			<Canvas flat>
 				<SheetProvider sheet={demoSheet}>
