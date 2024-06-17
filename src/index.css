@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body,
 #root {
@@ -13,4 +17,8 @@ body,
 		rgba(243, 244, 207, 1) 48%,
 		rgba(255, 214, 141, 1) 100%
 	);
+	font-family: "Bodoni Moda", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
