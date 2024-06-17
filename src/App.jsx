@@ -142,7 +142,7 @@ function App() {
 					className="privacy-screen"
 				/>
 			)}
-			{showReplayButton && (
+			{showReplayButton && showCanvas && (
 				<div className="fixed left-20 z-50 w-full top-10  ">
 					<motion.button
 						initial={{ opacity: 0 }}
