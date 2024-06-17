@@ -1,4 +1,4 @@
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, PresentationControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { getProject } from "@theatre/core";
 import { OrthographicCamera, SheetProvider } from "@theatre/r3f";
@@ -48,7 +48,6 @@ function App() {
 						snap
 						global
 						zoom={0.8}
-						rotation={[0, -Math.PI / 4, 0]}
 						polar={[0, Math.PI / 4]}
 						azimuth={[-Math.PI / 4, Math.PI / 4]}
 					> */}

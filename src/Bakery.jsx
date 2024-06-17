@@ -10,7 +10,7 @@ import { editable as e } from "@theatre/r3f";
 export function Bakery(props) {
 	const { nodes } = useGLTF("/bakerybake2.glb");
 
-	const bakedTexture = useTexture("/bakembakery.jpg");
+	const bakedTexture = useTexture("/newbake2.jpg");
 
 	bakedTexture.flipY = false;
 
