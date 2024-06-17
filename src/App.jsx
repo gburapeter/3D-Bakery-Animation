@@ -112,10 +112,6 @@ function App() {
 
 					<div className="fixed inset-0 w-full h-full justify-center inline-flex ">
 						<Donut />
-						{/* <button className="h-fit" onClick={handleStart}>
-							<Arrow />
-							<Replay />
-						</button> */}
 					</div>
 
 					<div className="fixed bottom-20 justify-center lg:bottom-0 w-full lg:w-fit lg:right-10 lg:h-full inline-flex lg:items-center  ">
@@ -126,7 +122,7 @@ function App() {
 								transition: {
 									duration: 1,
 									ease: "circInOut",
-									delay: 3.8,
+									delay: 3.1,
 								},
 							}}
 							className=""
