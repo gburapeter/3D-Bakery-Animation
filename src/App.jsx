@@ -49,7 +49,7 @@ function App() {
 						Ghiurutan-Bura Peter
 					</div>
 
-					<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-8 text-xl lg:text-3xl z-50">
+					<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-8 text-xl lg:text-2xl z-50">
 						<div>
 							<a
 								target="_blank"
