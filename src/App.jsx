@@ -45,7 +45,7 @@ function App() {
 		<>
 			{!showCanvas && (
 				<div className="h-screen grid items-start py-16 px-6 lg:px-16 xl:px-32 2xl:px-48 grid-cols-4 w-screen relative">
-					<div className="col-span-2 text-3xl lg:text-4xl">
+					<div className="col-span-2 text-3xl lg:text-4xl 2xl:text-5xl">
 						Ghiurutan-Bura Peter
 					</div>
 
@@ -83,7 +83,7 @@ function App() {
 						</a>
 					</div>
 
-					<div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl lg:text-2xl ">
+					<div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl ">
 						{todaysDate}
 					</div>
 
