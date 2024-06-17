@@ -72,7 +72,7 @@ function App() {
 						</div>
 					</div>
 
-					<div className="  col-span-2 text-lg inline-flex h-full items-end text-start">
+					<div className=" z-50 col-span-2 text-lg inline-flex h-full items-end text-start">
 						<a
 							target="_blank"
 							className=""
