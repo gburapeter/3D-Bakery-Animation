@@ -14,6 +14,7 @@ import Arrow from "./CustomButtons/Arrow";
 import Donut from "./Donut";
 import Replay from "./CustomButtons/Replay";
 import { motion } from "framer-motion";
+import Back from "./CustomButtons/Back";
 
 // if (import.meta.env.DEV) {
 // 	studio.initialize();
@@ -39,7 +40,7 @@ function App() {
 					// this promise resolves immediately as everything is already provided
 					.then(() => {
 						demoSheet.sequence
-							.play({ range: [0, 14.5] })
+							.play({ range: [0, 13] })
 							.then(() => setReplayButton(true));
 					});
 			}, 1100);
@@ -49,8 +50,14 @@ function App() {
 	const handleReplay = () => {
 		setReplayButton(false);
 		demoSheet.sequence
-			.play({ range: [0, 14.5] })
+			.play({ range: [0, 13] })
 			.then(() => setReplayButton(true));
+	};
+
+	const handleBack = () => {
+		setShowCanvas(false);
+		setReplayButton(false);
+		demoSheet.sequence.pause();
 	};
 	return (
 		<>
@@ -143,24 +150,44 @@ function App() {
 				/>
 			)}
 			{showReplayButton && showCanvas && (
-				<div className="fixed left-20 z-50 w-full top-10  ">
-					<motion.button
-						initial={{ opacity: 0 }}
-						animate={{
-							opacity: 1,
-							transition: {
-								duration: 1,
-								ease: "circInOut",
-							},
-						}}
-						className=""
-						onClick={handleReplay}
-					>
-						<Replay />
-						{/* <Replay /> */}
-					</motion.button>
-				</div>
+				<>
+					<div className="fixed left-20 z-50 w-full top-10  ">
+						<motion.button
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+								transition: {
+									duration: 1,
+									ease: "circInOut",
+								},
+							}}
+							className=""
+							onClick={handleBack}
+						>
+							<Back />
+							{/* <Replay /> */}
+						</motion.button>
+					</div>
+					<div className="fixed right-20 z-50 top-10  ">
+						<motion.button
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+								transition: {
+									duration: 1,
+									ease: "circInOut",
+								},
+							}}
+							className=""
+							onClick={handleReplay}
+						>
+							<Replay />
+							{/* <Replay /> */}
+						</motion.button>
+					</div>
+				</>
 			)}
+
 			<Canvas flat>
 				<SheetProvider sheet={demoSheet}>
 					<OrthographicCamera
