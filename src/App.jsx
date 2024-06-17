@@ -27,6 +27,7 @@ const demoSheet = getProject("Demo Project", { state: demoProjectState }).sheet(
 function App() {
 	const todaysDate = new Date().toLocaleString();
 	const [showCanvas, setShowCanvas] = useState(false);
+	const [showReplayButton, setReplayButton] = useState(false);
 
 	const handleStart = () => {
 		setShowCanvas(true);
@@ -37,10 +38,19 @@ function App() {
 					.attachAudio({ source: BakeryMusic })
 					// this promise resolves immediately as everything is already provided
 					.then(() => {
-						demoSheet.sequence.play();
+						demoSheet.sequence
+							.play({ range: [0, 14.5] })
+							.then(() => setReplayButton(true));
 					});
 			}, 1100);
 		});
+	};
+
+	const handleReplay = () => {
+		setReplayButton(false);
+		demoSheet.sequence
+			.play({ range: [0, 14.5] })
+			.then(() => setReplayButton(true));
 	};
 	return (
 		<>
@@ -50,7 +60,7 @@ function App() {
 						Ghiurutan-Bura Peter
 					</div>
 
-					<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-8 text-xl lg:text-2xl z-50">
+					<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-5 text-xl lg:text-2xl z-50">
 						<div>
 							<a
 								target="_blank"
@@ -97,10 +107,22 @@ function App() {
 					</div>
 
 					<div className="fixed bottom-20 justify-center lg:bottom-0 w-full lg:w-fit lg:right-10 lg:h-full inline-flex lg:items-center  ">
-						<button className="" onClick={handleStart}>
+						<motion.button
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+								transition: {
+									duration: 1,
+									ease: "circInOut",
+									delay: 3.8,
+								},
+							}}
+							className=""
+							onClick={handleStart}
+						>
 							<Arrow />
 							{/* <Replay /> */}
-						</button>
+						</motion.button>
 					</div>
 				</div>
 			)}
@@ -119,6 +141,25 @@ function App() {
 					style={{ originX: showCanvas ? 0 : 1 }}
 					className="privacy-screen"
 				/>
+			)}
+			{showReplayButton && (
+				<div className="fixed left-20 z-50 w-full top-10  ">
+					<motion.button
+						initial={{ opacity: 0 }}
+						animate={{
+							opacity: 1,
+							transition: {
+								duration: 1,
+								ease: "circInOut",
+							},
+						}}
+						className=""
+						onClick={handleReplay}
+					>
+						<Replay />
+						{/* <Replay /> */}
+					</motion.button>
+				</div>
 			)}
 			<Canvas flat>
 				<SheetProvider sheet={demoSheet}>
