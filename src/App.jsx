@@ -41,13 +41,14 @@ function App() {
 
 	return (
 		<>
-			<div className="h-screen grid items-start py-16 px-32 grid-cols-4 w-screen relative">
+			<div className="h-screen grid items-start py-16 px-6 lg:px-16 xl:px-32 2xl:px-48 grid-cols-4 w-screen relative">
 				<div className="col-span-2 text-4xl">Ghiurutan-Bura Peter</div>
 
 				<div className="col-span-2 text-end flex flex-col space-y-8 text-3xl ">
 					<div>
 						<a
 							target="_blank"
+							href="https://www.linkedin.com/in/p%C3%A9ter-ghiurutan-bura-2765a41a2/"
 							className="w-full relative group cursor-pointer hover:text-gray-700  "
 						>
 							Linkedin
@@ -57,6 +58,7 @@ function App() {
 					<div>
 						<a
 							target="_blank"
+							href="https://github.com/gburapeter"
 							className="w-full relative group cursor-pointer hover:text-gray-700  "
 						>
 							Github
@@ -65,13 +67,13 @@ function App() {
 					</div>
 				</div>
 
-				<div className="  col-span-2 text-2xl inline-flex h-full items-end text-start">
+				<div className="  col-span-2 text-lg inline-flex h-full items-end text-start">
 					<a
 						target="_blank"
 						className=""
 						href="https://www.freepik.com/free-vector/hand-drawn-plain-donut_16263485.htm#query=donut%20svg&position=0&from_view=keyword&track=ais_user&uuid=997c96f7-11bd-4a70-8bea-4ec6211fe314"
 					>
-						SVG by{" "}
+						svg by{" "}
 						<span className="italic text-slate-900">rawpixel.com</span>
 					</a>
 				</div>
