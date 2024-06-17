@@ -95,7 +95,7 @@ function App() {
 						</button> */}
 					</div>
 
-					<div className="fixed right-10 h-full inline-flex items-center  ">
+					<div className="fixed bottom-20 justify-center lg:bottom-0 w-full lg:w-fit lg:right-10 lg:h-full inline-flex lg:items-center  ">
 						<button className="" onClick={handleStart}>
 							<Arrow />
 							{/* <Replay /> */}
