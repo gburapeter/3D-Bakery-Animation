@@ -9,12 +9,12 @@ import demoProjectState from "./fixedv2.json";
 // import extension from "@theatre/r3f/dist/extension";
 // import studio from "@theatre/studio";
 
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import Arrow from "./CustomButtons/Arrow";
-import Donut from "./Donut";
-import Replay from "./CustomButtons/Replay";
-import { AnimatePresence, motion } from "framer-motion";
 import Back from "./CustomButtons/Back";
+import Replay from "./CustomButtons/Replay";
+import Donut from "./Donut";
 
 // if (import.meta.env.DEV) {
 // 	studio.initialize();
@@ -72,7 +72,7 @@ function App() {
 						Ghiurutan-Bura Peter
 					</div>
 
-					<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-5 text-xl lg:text-2xl z-50">
+					<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-5 text-xl lg:text-2xl xl:text-3xl z-50">
 						<div>
 							<a
 								target="_blank"
@@ -106,7 +106,7 @@ function App() {
 						</a>
 					</div>
 
-					<div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl ">
+					<div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl xl:text-2xl ">
 						{todaysDate}
 					</div>
 
@@ -140,11 +140,17 @@ function App() {
 					animate={{
 						scaleX: 0,
 						opacity: 0.5,
-						transition: { duration: 1.1, ease: "easeInOut" },
+						transition: {
+							duration: 1.5,
+							ease: [0.87, 0, 0.13, 1],
+						},
 					}}
 					exit={{
 						scaleX: 1,
-						transition: { duration: 1.1, ease: "circIn" },
+						transition: {
+							duration: 1.5,
+							ease: [0.87, 0, 0.13, 1],
+						},
 					}}
 					style={{ originX: showCanvas ? 0 : 1 }}
 					className="privacy-screen"
@@ -156,11 +162,17 @@ function App() {
 					animate={{
 						scaleX: 0,
 						opacity: 0.5,
-						transition: { duration: 1.1, ease: "easeInOut" },
+						transition: {
+							duration: 1.5,
+							ease: [0.87, 0, 0.13, 1],
+						},
 					}}
 					exit={{
 						scaleX: 1,
-						transition: { duration: 1.1, ease: "circIn" },
+						transition: {
+							duration: 1.5,
+							ease: [0.87, 0, 0.13, 1],
+						},
 					}}
 					style={{ originX: showCanvas ? 1 : 0 }}
 					className="privacy-screen"
