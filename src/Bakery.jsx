@@ -1351,4 +1351,4 @@ export function Bakery(props) {
 	);
 }
 
-useGLTF.preload("/baking.glb");
+useGLTF.preload("/bakerybake2.glb");
