@@ -180,7 +180,7 @@ function App() {
 			)}
 			{showReplayButton && showCanvas && (
 				<>
-					<div className="fixed left-20 z-50 w-full top-10  ">
+					<div className="fixed left-0 sm:left-20 z-50 w-full sm:top-10  ">
 						<motion.button
 							initial={{ opacity: 0 }}
 							animate={{
@@ -197,7 +197,7 @@ function App() {
 							{/* <Replay /> */}
 						</motion.button>
 					</div>
-					<div className="fixed right-20 z-50 top-10  ">
+					<div className="fixed right-0 sm:right-20 z-50 sm:top-10  ">
 						<motion.button
 							initial={{ opacity: 0 }}
 							animate={{
