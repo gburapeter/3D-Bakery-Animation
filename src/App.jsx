@@ -110,7 +110,7 @@ function App() {
 						{todaysDate}
 					</div>
 
-					<div className="fixed inset-0 w-full h-full justify-center inline-flex ">
+					<div className="fixed inset-0 w-full h-full items-center  justify-center inline-flex ">
 						<Donut />
 					</div>
 
