@@ -39,10 +39,9 @@ export const Overview = ({ handleStart }) => {
 				<a
 					target="_blank"
 					className=""
-					href="https://www.freepik.com/free-vector/hand-drawn-plain-donut_16263485.htm#query=donut%20svg&position=0&from_view=keyword&track=ais_user&uuid=997c96f7-11bd-4a70-8bea-4ec6211fe314"
+					href="https://www.youtube.com/watch?v=HKEmaPj935M&ab_channel=DubFX"
 				>
-					svg by{" "}
-					<span className="italic text-slate-900">rawpixel.com</span>
+					awesome music
 				</a>
 			</div>
 
