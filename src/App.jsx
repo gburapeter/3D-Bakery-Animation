@@ -69,7 +69,7 @@ function App() {
 			{!showCanvas && (
 				<div className="h-screen grid items-start py-16 px-6 lg:px-16 xl:px-32 2xl:px-48 grid-cols-4 w-screen relative">
 					<div className="col-span-2 text-3xl lg:text-4xl 2xl:text-5xl">
-						Ghiurutan-Bura Peter
+						Bakery Animation
 					</div>
 
 					<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-5 text-xl lg:text-2xl xl:text-3xl z-50">
