@@ -38,10 +38,10 @@ export const Overview = ({ handleStart }) => {
 			<div className=" z-50 col-span-2 text-lg inline-flex h-full items-end text-start">
 				<a
 					target="_blank"
-					className=""
+					className="gg-font-bold"
 					href="https://www.youtube.com/watch?v=HKEmaPj935M&ab_channel=DubFX"
 				>
-					awesome music
+					click for awesome music
 				</a>
 			</div>
 
