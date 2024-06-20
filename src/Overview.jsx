@@ -8,7 +8,7 @@ export const Overview = ({ handleStart }) => {
 	const todaysDate = new Date().toLocaleString();
 	return (
 		<div className="h-screen grid items-start py-16 px-6 lg:px-16 xl:px-32 2xl:px-48 grid-cols-4 w-screen relative">
-			<div className="col-span-2 text-3xl lg:text-4xl 2xl:text-5xl">
+			<div className="col-span-2 text-4xl lg:text-5xl 2xl:text-6xl">
 				Bakery Animation
 			</div>
 
