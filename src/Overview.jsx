@@ -54,9 +54,9 @@ export const Overview = ({ handleStart }) => {
 
 			<motion.div
 				key="music"
-				initial={{ opacity: 0, scale: 0, y: -300 }} // Start from the right side of the screen
-				animate={{ opacity: 1, scale: 1, y: 0 }} // Slide to the original position
-				transition={{ duration: 1.5, ease: "easeIn", delay: 1.2 }}
+				initial={{ opacity: 0, scale: 0, x: -300, y: 300 }} // Start from the right side of the screen
+				animate={{ opacity: 1, scale: 1, x: 0, y: 0 }} // Slide to the original position
+				transition={{ duration: 1.5, ease: "circOut", delay: 1.2 }}
 				className=" z-50 col-span-2 text-lg inline-flex h-full items-end text-start"
 			>
 				<a
@@ -68,7 +68,13 @@ export const Overview = ({ handleStart }) => {
 				</a>
 			</motion.div>
 
-			<motion.div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl xl:text-2xl ">
+			<motion.div
+				key="date"
+				initial={{ opacity: 0, scale: 0, x: -300, y: 300 }} // Start from the right side of the screen
+				animate={{ opacity: 1, scale: 1, x: 0, y: 0 }} // Slide to the original position
+				transition={{ duration: 1.5, ease: "circOut", delay: 1.9 }}
+				className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl xl:text-2xl "
+			>
 				{todaysDate}
 			</motion.div>
 
