@@ -9,11 +9,23 @@ export const Overview = ({ handleStart }) => {
 	return (
 		<div className="h-screen grid items-start py-16 px-6 lg:px-16 xl:px-32 2xl:px-48 grid-cols-4 w-screen relative">
 			<div className="col-span-2 text-4xl lg:text-5xl 2xl:text-6xl">
-				Bakery Animation
+				<motion.h1
+					key="hello"
+					initial={{ opacity: 0, y: -300, scale: 0.5 }}
+					animate={{ opacity: 1, y: 0, scale: 1 }}
+					transition={{ duration: 1, ease: "easeOut" }}
+				>
+					Bakery Animation
+				</motion.h1>
 			</div>
 
 			<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-5 text-xl lg:text-2xl xl:text-3xl z-50">
-				<div>
+				<motion.div
+					key="linkedin"
+					initial={{ opacity: 0, scale: 0, x: "90vw" }} // Start from the right side of the screen
+					animate={{ opacity: 1, scale: 1, x: "0px" }} // Slide to the original position
+					transition={{ duration: 3, ease: "backInOut", delay: 0.6 }}
+				>
 					<a
 						target="_blank"
 						href="https://www.linkedin.com/in/p%C3%A9ter-ghiurutan-bura-2765a41a2/"
@@ -22,8 +34,13 @@ export const Overview = ({ handleStart }) => {
 						Linkedin
 						<span className="absolute -bottom-1 right-0 w-full h-[0.15rem] bg-black transition-all group-hover:w-0"></span>
 					</a>
-				</div>
-				<div>
+				</motion.div>
+				<motion.div
+					key="github"
+					initial={{ scale: 0, x: "10vw" }} // Start from the right side of the screen
+					animate={{ scale: 1, x: "0px" }} // Slide to the original position
+					transition={{ duration: 3, ease: "backInOut", delay: 0.9 }}
+				>
 					<a
 						target="_blank"
 						href="https://github.com/gburapeter"
@@ -32,10 +49,16 @@ export const Overview = ({ handleStart }) => {
 						Github
 						<span className="absolute -bottom-1 right-0 w-full h-[0.15rem] bg-black transition-all group-hover:w-0"></span>
 					</a>
-				</div>
+				</motion.div>
 			</div>
 
-			<div className=" z-50 col-span-2 text-lg inline-flex h-full items-end text-start">
+			<motion.div
+				key="music"
+				initial={{ opacity: 0, scale: 0, y: -300 }} // Start from the right side of the screen
+				animate={{ opacity: 1, scale: 1, y: 0 }} // Slide to the original position
+				transition={{ duration: 1.5, ease: "easeIn", delay: 1.2 }}
+				className=" z-50 col-span-2 text-lg inline-flex h-full items-end text-start"
+			>
 				<a
 					target="_blank"
 					className="hover:font-bold"
@@ -43,11 +66,11 @@ export const Overview = ({ handleStart }) => {
 				>
 					click for awesome music
 				</a>
-			</div>
+			</motion.div>
 
-			<div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl xl:text-2xl ">
+			<motion.div className=" h-full col-start-4 text-end inline-flex items-end justify-end w-full text-xl xl:text-2xl ">
 				{todaysDate}
-			</div>
+			</motion.div>
 
 			<div className="fixed inset-0 w-full h-full items-center  justify-center inline-flex ">
 				<Donut />
