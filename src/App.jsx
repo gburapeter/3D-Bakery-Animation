@@ -39,7 +39,7 @@ function App() {
 					// this promise resolves immediately as everything is already provided
 					.then(() => {
 						demoSheet.sequence
-							.play({ range: [0, 12.5] })
+							.play({ range: [0, 12.5], rate: 1.25 })
 							.then(() => setReplayButton(true));
 					});
 			}, 1100);
@@ -49,7 +49,7 @@ function App() {
 	const handleReplay = () => {
 		setReplayButton(false);
 		demoSheet.sequence
-			.play({ range: [0, 12.5] })
+			.play({ range: [0, 12.5], rate: 1.25 })
 			.then(() => setReplayButton(true));
 	};
 
