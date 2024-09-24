@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
 import "./App.css";
-import { motion } from "framer-motion";
 import Arrow from "./CustomButtons/Arrow";
 import Donut from "./Donut";
 
@@ -11,9 +11,9 @@ export const Overview = ({ handleStart }) => {
 			<div className="col-span-2 text-4xl lg:text-5xl 2xl:text-6xl">
 				<motion.h1
 					key="hello"
-					initial={{ opacity: 0, x: -150, y: -300, scale: 0.5 }}
-					animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-					transition={{ duration: 1, ease: "circOut" }}
+					initial={{ opacity: 0, scale: 0 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 1, ease: "easeInOut" }}
 				>
 					Bakery Animation
 				</motion.h1>
@@ -22,9 +22,9 @@ export const Overview = ({ handleStart }) => {
 			<div className="col-span-2 text-end flex flex-col space-y-4 lg:space-y-5 text-xl lg:text-2xl xl:text-3xl z-50">
 				<motion.div
 					key="linkedin"
-					initial={{ opacity: 0, scale: 0, x: "90vw" }} // Start from the right side of the screen
-					animate={{ opacity: 1, scale: 1, x: "0px" }} // Slide to the original position
-					transition={{ duration: 2.5, ease: "backInOut", delay: 0.1 }}
+					initial={{ opacity: 0, y: 10 }} // Start from the right side of the screen
+					animate={{ opacity: 1, y: 0 }} // Slide to the original position
+					transition={{ duration: 1, ease: "easeInOut", delay: 0.9 }}
 				>
 					<a
 						target="_blank"
@@ -37,9 +37,9 @@ export const Overview = ({ handleStart }) => {
 				</motion.div>
 				<motion.div
 					key="github"
-					initial={{ scale: 0, x: "10vw" }} // Start from the right side of the screen
-					animate={{ scale: 1, x: "0px" }} // Slide to the original position
-					transition={{ duration: 2.5, ease: "backInOut" }}
+					initial={{ opacity: 0, y: 10 }} // Start from the right side of the screen
+					animate={{ opacity: 1, y: 0 }} // Slide to the original position
+					transition={{ duration: 1, ease: "easeInOut", delay: 0.8 }}
 				>
 					<a
 						target="_blank"
