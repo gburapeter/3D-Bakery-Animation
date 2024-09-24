@@ -13,7 +13,7 @@ export const Overview = ({ handleStart }) => {
 					key="hello"
 					initial={{ opacity: 0, scale: 0 }}
 					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 1, ease: "easeInOut" }}
+					transition={{ duration: 1.6, ease: "easeInOut" }}
 				>
 					Bakery Animation
 				</motion.h1>
@@ -24,7 +24,7 @@ export const Overview = ({ handleStart }) => {
 					key="linkedin"
 					initial={{ opacity: 0, y: 10 }} // Start from the right side of the screen
 					animate={{ opacity: 1, y: 0 }} // Slide to the original position
-					transition={{ duration: 1, ease: "easeInOut", delay: 0.9 }}
+					transition={{ duration: 1, ease: "easeInOut", delay: 1.3 }}
 				>
 					<a
 						target="_blank"
@@ -39,7 +39,7 @@ export const Overview = ({ handleStart }) => {
 					key="github"
 					initial={{ opacity: 0, y: 10 }} // Start from the right side of the screen
 					animate={{ opacity: 1, y: 0 }} // Slide to the original position
-					transition={{ duration: 1, ease: "easeInOut", delay: 0.8 }}
+					transition={{ duration: 1, ease: "easeInOut", delay: 1.4 }}
 				>
 					<a
 						target="_blank"
